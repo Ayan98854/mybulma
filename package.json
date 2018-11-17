@@ -1,0 +1,25 @@
+{
+  "name": "mybulma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnoorul/mybulma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnoorul/mybulma/issues"
+  },
+  "homepage": "https://github.com/jnoorul/mybulma#readme",
+  "dependencies": {
+    "bulma": "^0.7.2",
+    "node-sass": "^4.10.0"
+  }
+}
