@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html lang="en" class="route-documentation">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Style is a CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.">
+
+  <title>Icon | My Style</title>
+
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
+  
+  
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  
+  
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/bulma-docs.min.css?v=201811171301">
+
+  <link rel="canonical" href="http://localhost:4000/documentation/elements/icon/">
+  <link rel="alternate" type="application/rss+xml" title="My Style" href="http://localhost:4000/atom.xml">
+
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:type" content="website">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+
+
+  <!-- Shared social media -->
+  
+    <meta property="og:title" content="Icon">
+    <meta name="twitter:title" content="Icon">
+  
+
+  
+    
+    
+      <meta property="og:description" content="Essential interface elements that only require a single CSS class">
+      <meta name="twitter:description" content="Essential interface elements that only require a single CSS class">
+    
+  
+
+  
+    <meta property="og:image" content="http://localhost:4000/images/bulma-banner.png">
+    <meta name="twitter:image" content="http://localhost:4000/images/bulma-banner.png">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="http://localhost:4000/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="http://localhost:4000/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="http://localhost:4000/favicons/favicon.ico?v=201701041855">
+  <meta name="msapplication-config" content="http://localhost:4000/favicons/browserconfig.xml?v=201701041855">
+  <meta name="theme-color" content="#00d1b2">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+  <body class="layout-documentation page-elements">
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost:4000">
+        <h3>My Style</h3>
+      </a>
+
+      <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navMenuDocumentation" class="navbar-menu">
+      <div class="navbar-start">
+        <a
+          class="navbar-item bd-navbar-item-documentation  is-active"
+          href="/documentation">
+        <span class="icon has-text-primary">
+          <i class="fas fa-book"></i>
+        </span>
+          <span class="is-hidden-touch is-hidden-widescreen">
+          Docs
+        </span>
+          <span class="is-hidden-desktop-only">
+          Documentation
+        </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<main class="bd-main">
+  <div class="bd-side-background"></div>
+  <div class="bd-main-container container">
+    <div class="bd-duo">
+      <div class="bd-lead">
+        <div class="bd-breadcrumb">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      
+        
+        <li>
+          <a href="http://localhost:4000">Home</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation">Documentation</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation/elements">Elements</a>
+        </li>
+      
+        
+        <li class="is-active">
+          <a href="http://localhost:4000/documentation/elements/icon">Icon</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+    <nav class="bd-prev-next">
+      
+        <a href="http://localhost:4000/documentation/elements/delete" title="Delete">
+          ←
+        </a>
+      
+
+      
+        <a href="http://localhost:4000/documentation/elements/image" title="Image">
+          →
+        </a>
+      
+    </nav>
+  
+</div>
+
+
+        <header class="bd-header">
+          <div class="bd-header-titles">
+            <h1 class="title">
+              Icon
+            </h1>
+            <p class="subtitle is-4">
+              
+                Bulma is compatible with <strong>all icon font libraries</strong>: <a href="https://fontawesome.com/">Font Awesome 5</a>, <a href="http://fontawesome.io/">Font Awesome 4</a>, <a href="https://materialdesignicons.com">Material Design Icons</a>, <a href="https://useiconic.com/open">Open Iconic</a>, <a href="http://ionicons.com/">Ionicons</a> etc.
+              
+            </p>
+            
+              <div id="meta" class="field is-grouped is-grouped-multiline">
+
+  
+
+  
+
+  
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Colors</span>
+      
+        <a class="tag is-success" href="#colors">Yes</a>
+      
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Sizes</span>
+      
+        <a class="tag is-success" href="#sizes">Yes</a>
+      
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Variables</span>
+      
+        <a class="tag is-success" href="#variables">Yes</a>
+      
+    </div>
+  </div>
+</div>
+
+            
+          </div>
+        </header>
+
+        
+          <nav class="bd-tabs">
+            <div class="tabs">
+              <ul>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/box">
+                      Box
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/button">
+                      Button
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/content">
+                      Content
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/delete">
+                      Delete
+                    </a>
+                  </li>
+                
+                  
+                  <li class="is-active">
+                    <a href="http://localhost:4000/documentation/elements/icon">
+                      Icon
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/image">
+                      Image
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/notification">
+                      Notification
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/progress">
+                      Progress bars
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/table">
+                      Table
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/tag">
+                      Tag
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/title">
+                      Title
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </nav>
+        
+
+        <div class="bd-content">
+          
+
+
+
+
+
+
+
+
+
+<div class="content">
+  <p>
+    The <code>icon</code> element is a <strong>container</strong> for any type of <strong>icon font</strong>. Because the icons can take a few seconds to load, and because you want control over the <strong>space</strong> the icons will take, you can use the <code>icon</code> class as a reliable square container that will prevent the page to "jump" on page load.</p>
+</div>
+
+<div class="block bd-icon-size">
+  
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<span class="icon">
+  <i class="fas fa-home"></i>
+</span>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-home"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="message is-info">
+  <div class="message-body">
+    The <strong>yellow background</strong> is only here for demonstration purposes, to highlight the icon container's area.
+  </div>
+</div>
+
+
+<div class="content">
+  <p>
+    By default, the <code>icon</code> container will take up <em>exactly</em> <code>1.5rem x 1.5rem</code>. The icon itself is sized accordingly to the icon library you're using. For example, Font Awesome 5 icons will <strong>inherit</strong> the font size.</p>
+</div>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="colors" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Colors
+  </span>
+  <a class="bd-anchor-link" href="#colors">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    Since icon fonts are simply <strong>text</strong>, you can use the <a href="http://localhost:4000/documentation/modifiers/typography-helpers/#colors">text color modifiers</a> to change the icon's color.
+  </p>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<span class="icon has-text-info">
+  <i class="fas fa-info-circle"></i>
+</span>
+<span class="icon has-text-success">
+  <i class="fas fa-check-square"></i>
+</span>
+<span class="icon has-text-warning">
+  <i class="fas fa-exclamation-triangle"></i>
+</span>
+<span class="icon has-text-danger">
+  <i class="fas fa-ban"></i>
+</span>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon has-text-info"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-info-circle"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon has-text-success"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-check-square"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon has-text-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-exclamation-triangle"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon has-text-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-ban"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="sizes" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Sizes
+  </span>
+  <a class="bd-anchor-link" href="#sizes">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    The Bulma <code>icon</code> container comes in <strong>4 sizes</strong>. It should always be <em>slightly bigger</em> than the icon it contains. For example, Font Awesome 5 icons use a font-size of <code>1em</code> by default (since it inherits the font size), but provides <a href="https://fontawesome.com/how-to-use/svg-with-js#additional-styling" target="_blank">additional sizes</a>.
+  </p>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Container class</th>
+      <th>Container size</th>
+      <th>Font Awesome 5 class</th>
+      <th>Icon size</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>icon is-small</code>
+      </td>
+      <td>
+        <code>1rem x 1rem</code>
+      </td>
+      <td>
+        <code>fas</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-small">
+          <i class="fas fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <code>icon</code>
+      </td>
+      <td rowspan="2">
+        <code>1.5rem x 1.5rem</code>
+      </td>
+      <td>
+        <code>fas</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-lg</code>
+      </td>
+      <td>
+        <code>1.33em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-lg fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="3">
+        <code>icon is-medium</code>
+      </td>
+      <td rowspan="3">
+        <code>2rem x 2rem</code>
+      </td>
+      <td>
+        <code>fas</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="fas fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-lg</code>
+      </td>
+      <td>
+        <code>1.33em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="fas fa-lg fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-2x</code>
+      </td>
+      <td>
+        <code>2em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="fas fa-2x fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        <code>icon is-large</code>
+      </td>
+      <td rowspan="4">
+        <code>3rem x 3rem</code>
+      </td>
+      <td>
+        <code>fas</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="fas fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-lg</code>
+      </td>
+      <td>
+        <code>1.33em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="fas fa-lg fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-2x</code>
+      </td>
+      <td>
+        <code>2em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="fas fa-2x fa-home"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fas fa-3x</code>
+      </td>
+      <td>
+        <code>3em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="fas fa-3x fa-home"></i>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="font-awesome-variations" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Font Awesome variations
+  </span>
+  <a class="bd-anchor-link" href="#font-awesome-variations">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    Font Awesome also provides modifier classes for:
+  </p>
+  <ul>
+    <li>
+      fixed width icons
+    </li>
+    <li>
+      bordered icons
+    </li>
+    <li>
+      animated icons
+    </li>
+    <li>
+      rotated &amp; flipped icons
+    </li>
+    <li>
+      stacked icons
+    </li>
+  </ul>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Font Awesome class</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Fixed width
+      </td>
+      <td>
+        <code>fas fa-fw</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-home fa-fw"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bordered
+      </td>
+      <td>
+        <code>fas fa-border</code>
+      </td>
+      <td>
+        <span class="icon">
+          <i class="fas fa-home fa-border"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Animated
+      </td>
+      <td>
+        <code>fas fa-spinner fa-pulse</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-spinner fa-pulse"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Rotated &amp; flipped
+      </td>
+      <td>
+        <code>fas fa-shield-alt</code><br>
+        <code>fas fa-shield-alt</code> <code>data-fa-transform="rotate-90"</code><br>
+        <code>fas fa-shield-alt</code> <code>data-fa-transform="rotate-180"</code><br>
+        <code>fas fa-shield-alt</code> <code>data-fa-transform="rotate-270"</code><br>
+        <code>fas fa-shield-alt</code> <code>data-fa-transform="flip-h"</code><br>
+        <code>fas fa-shield-alt</code> <code>data-fa-transform="flip-v"</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="fas fa-shield-alt"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="fas fa-shield-alt" data-fa-transform="rotate-90"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="fas fa-shield-alt" data-fa-transform="rotate-180"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="fas fa-shield-alt" data-fa-transform="rotate-270"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="fas fa-shield-alt" data-fa-transform="flip-h"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="fas fa-shield-alt" data-fa-transform="flip-v"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        Stacked
+      </td>
+      <td>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-medium"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa-stack"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-circle fa-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-flag fa-stack-1x fa-inverse"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+          </span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-large"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fa-stack fa-lg"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-camera fa-stack-1x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-ban fa-stack-2x has-text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <span class="fa-stack fa-lg">
+            <i class="fas fa-camera fa-stack-1x"></i>
+            <i class="fas fa-ban fa-stack-2x has-text-danger"></i>
+          </span>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="material-design-icons" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Material Design Icons
+  </span>
+  <a class="bd-anchor-link" href="#material-design-icons">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    Here is how the <code>icon</code> container can be used with <a href="https://materialdesignicons.com">Material Design Icons</a>.
+  </p>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Container class</th>
+      <th>Container size</th>
+      <th>MDI class</th>
+      <th>Icon size</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>icon is-small</code>
+      </td>
+      <td>
+        <code>1rem x 1rem</code>
+      </td>
+      <td>
+        <code>mdi</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-small">
+          <i class="mdi mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <code>icon</code>
+      </td>
+      <td rowspan="2">
+        <code>1.5rem x 1.5rem</code>
+      </td>
+      <td>
+        <code>mdi mdi-18px</code>
+      </td>
+      <td>
+        <code>18px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-18px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-24px</code>
+      </td>
+      <td>
+        <code>24px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-24px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        <code>icon is-medium</code>
+      </td>
+      <td rowspan="4">
+        <code>2rem x 2rem</code>
+      </td>
+      <td>
+        <code>mdi</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="mdi mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-18px</code>
+      </td>
+      <td>
+        <code>18px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="mdi mdi-18px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-24px</code>
+      </td>
+      <td>
+        <code>24px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="mdi mdi-24px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-36px</code>
+      </td>
+      <td>
+        <code>36px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <i class="mdi mdi-36px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="5">
+        <code>icon is-large</code>
+      </td>
+      <td rowspan="5">
+        <code>3rem x 3rem</code>
+      </td>
+      <td>
+        <code>mdi</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-18px</code>
+      </td>
+      <td>
+        <code>18px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-18px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-24px</code>
+      </td>
+      <td>
+        <code>24px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-24px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-36px</code>
+      </td>
+      <td>
+        <code>36px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-36px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>mdi mdi-48px</code>
+      </td>
+      <td>
+        <code>48px</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <i class="mdi mdi-48px mdi-bell"></i>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="content">
+  <p>
+    MDI also provides modifier classes for:
+  </p>
+  <ul>
+    <li>
+      light and dark icons
+    </li>
+    <li>
+      rotated &amp; flipped icons
+    </li>
+  </ul>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Material Design Icon class</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Light color
+      </td>
+      <td>
+        <code>mdi mdi-light</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-light"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Dark color
+      </td>
+      <td>
+        <code>mdi mdi-dark</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-dark"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Light inactive color
+      </td>
+      <td>
+        <code>mdi mdi-light mdi-inactive</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-light mdi-inactive"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Dark inactive color
+      </td>
+      <td>
+        <code>mdi mdi-dark mdi-inactive</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-dark mdi-inactive"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Flipped
+      </td>
+      <td>
+        <code>mdi mdi-flip-h</code>
+        <br>
+        <code>mdi mdi-flip-v</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-flip-h"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-flip-v"></i>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Rotated
+      </td>
+      <td>
+        <code>mdi mdi-rotate-45</code>
+        <br>
+        <code>mdi mdi-rotate-90</code>
+        <br>
+        <code>mdi mdi-rotate-180</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-rotate-45"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-rotate-90"></i>
+        </span>
+        <br>
+        <span class="icon">
+          <i class="mdi mdi-signal-4g mdi-rotate-180"></i>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="open-iconic" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Open Iconic
+  </span>
+  <a class="bd-anchor-link" href="#open-iconic">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    Here is how the <code>icon</code> container can be used with <a href="https://useiconic.com/open">Open Iconic</a>.
+  </p>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Container class</th>
+      <th>Container size</th>
+      <th>Iconic class</th>
+      <th>Icon size</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>icon is-small</code>
+      </td>
+      <td>
+        <code>1rem x 1rem</code>
+      </td>
+      <td>
+        <code>oi [data-glyph=puzzle-piece]</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-small">
+          <span class="oi" data-glyph="puzzle-piece"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon</code>
+      </td>
+      <td>
+        <code>1.5rem x 1.5rem</code>
+      </td>
+      <td>
+        <code>oi [data-glyph=puzzle-piece]</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <span class="oi" data-glyph="puzzle-piece"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon is-medium</code>
+      </td>
+      <td>
+        <code>2rem x 2rem</code>
+      </td>
+      <td>
+        <code>oi [data-glyph=puzzle-piece]</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <span class="oi" data-glyph="puzzle-piece"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon is-large</code>
+      </td>
+      <td>
+        <code>3rem x 3rem</code>
+      </td>
+      <td>
+        <code>oi [data-glyph=puzzle-piece]</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <span class="oi" data-glyph="puzzle-piece"></span>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="ionicons" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Ionicons
+  </span>
+  <a class="bd-anchor-link" href="#ionicons">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    Here is how the <code>icon</code> container can be used with <a href="http://ionicons.com">Ionicons</a>.
+  </p>
+</div>
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Container class</th>
+      <th>Container size</th>
+      <th>Ionicon class</th>
+      <th>Icon size</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>icon is-small</code>
+      </td>
+      <td>
+        <code>1rem x 1rem</code>
+      </td>
+      <td>
+        <code>ion-ionic</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-small">
+          <span class="ion-ionic"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon</code>
+      </td>
+      <td>
+        <code>1.5rem x 1.5rem</code>
+      </td>
+      <td>
+        <code>ion-ionic</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon">
+          <span class="ion-ionic"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon is-medium</code>
+      </td>
+      <td>
+        <code>2rem x 2rem</code>
+      </td>
+      <td>
+        <code>ion-ionic</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-medium">
+          <span class="ion-ionic"></span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon is-large</code>
+      </td>
+      <td>
+        <code>3rem x 3rem</code>
+      </td>
+      <td>
+        <code>ion-ionic</code>
+      </td>
+      <td>
+        <code>1em</code>
+      </td>
+      <td class="bd-icon-size">
+        <span class="icon is-large">
+          <span class="ion-ionic"></span>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+  
+    <hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="variables" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Variables
+  </span>
+  <a class="bd-anchor-link" href="#variables">
+    #
+  </a>
+</h3>
+
+  
+
+  
+    <div class="content">
+      <p>You can use <a href="https://github.com/jgthms/bulma/blob/master/sass/elements/icon.sass" target="_blank" rel="nofollow">
+          these variables
+        </a> to <strong>customize</strong> this element. Simply set one or multiple of these variables <em>before</em> importing Bulma. <a href="http://localhost:4000/documentation/overview/customize/">Learn how</a>.</p>
+    </div>
+  
+
+  <div class="table-container">
+    <table class="table is-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$icon-dimensions</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1.5rem</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$icon-dimensions-small</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1rem</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$icon-dimensions-medium</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>2rem</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$icon-dimensions-large</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>3rem</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+        
+      </tbody>
+    </table>
+  </div>
+
+
+
+        </div>
+
+        <nav class="bd-prev-next-bis">
+          
+            <a class="bd-prev-next-bis-previous" href="http://localhost:4000/documentation/elements/delete" title="Delete">
+              ← Delete
+            </a>
+          
+
+          
+            <a class="bd-prev-next-bis-next" href="http://localhost:4000/documentation/elements/image" title="Image">
+              Image →
+            </a>
+          
+        </nav>
+
+      </div>
+
+      <aside class="bd-side">
+        
+          <nav id="categories" class="bd-categories">
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/overview">
+          <strong>Overview</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/start">
+              Start
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/classes">
+              Classes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/modular">
+              Modularity
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/colors">
+              Colors
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/functions">
+              Functions
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/mixins">
+              Mixins
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/customize">
+          <strong>Customize</strong>
+          
+            <span class="tag is-success">
+              New!
+            </span>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/concepts">
+              Concepts
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/variables">
+              Variables
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-node-sass">
+              With node-sass
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-sass-cli">
+              With Sass CLI
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-webpack">
+              With webpack
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/modifiers">
+          <strong>Modifiers</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/syntax">
+              Syntax
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/helpers">
+              Helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/responsive-helpers">
+              Responsive helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/color-helpers">
+              Color helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/typography-helpers">
+              Typography helpers
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/columns">
+          <strong>Columns</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/basics">
+              Basics
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/sizes">
+              Sizes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/nesting">
+              Nesting
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/gap">
+              Gap
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/options">
+              Options
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/layout">
+          <strong>Layout</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/container">
+              Container
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/level">
+              Level
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/media-object">
+              Media Object
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/hero">
+              Hero
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/section">
+              Section
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/footer">
+              Footer
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/tiles">
+              Tiles
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/form">
+          <strong>Form</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/general">
+              General
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/input">
+              Input
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/textarea">
+              Textarea
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/select">
+              Select
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/checkbox">
+              Checkbox
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/radio">
+              Radio
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/file">
+              File
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category is-active">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/elements">
+          <strong>Elements</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/box">
+              Box
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/button">
+              Button
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/content">
+              Content
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/delete">
+              Delete
+            </a>
+          </li>
+        
+          
+          <li class="is-current">
+            <a href="http://localhost:4000/documentation/elements/icon">
+              Icon
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/image">
+              Image
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/notification">
+              Notification
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/progress">
+              Progress bars
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/table">
+              Table
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/tag">
+              Tag
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/title">
+              Title
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/components">
+          <strong>Components</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/breadcrumb">
+              Breadcrumb
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/card">
+              Card
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/dropdown">
+              Dropdown
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/menu">
+              Menu
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/message">
+              Message
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/modal">
+              Modal
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/navbar">
+              Navbar
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/pagination">
+              Pagination
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/panel">
+              Panel
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/tabs">
+              Tabs
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</nav>
+
+
+
+          <div id="anchorsReference" class="bd-anchors-reference"></div>
+<nav id="anchors" class="bd-anchors">
+  <p class="bd-anchors-title">
+    On this page
+  </p>
+
+  <ul class="bd-anchors-list"></ul>
+</nav>
+
+        
+      </aside>
+    </div>
+  </div>
+</main>
+
+  </body>
+</html>

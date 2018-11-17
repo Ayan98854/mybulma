@@ -1,0 +1,2674 @@
+<!DOCTYPE html>
+<html lang="en" class="route-documentation">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Style is a CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.">
+
+  <title>File upload | My Style</title>
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/bulma-docs.min.css?v=201811171301">
+
+  <link rel="canonical" href="http://localhost:4000/documentation/form/file/">
+  <link rel="alternate" type="application/rss+xml" title="My Style" href="http://localhost:4000/atom.xml">
+
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:type" content="website">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+
+
+  <!-- Shared social media -->
+  
+    <meta property="og:title" content="File upload">
+    <meta name="twitter:title" content="File upload">
+  
+
+  
+    
+    
+      <meta property="og:description" content="The indispensable form controls, designed for maximum clarity">
+      <meta name="twitter:description" content="The indispensable form controls, designed for maximum clarity">
+    
+  
+
+  
+    <meta property="og:image" content="http://localhost:4000/images/bulma-banner.png">
+    <meta name="twitter:image" content="http://localhost:4000/images/bulma-banner.png">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="http://localhost:4000/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="http://localhost:4000/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="http://localhost:4000/favicons/favicon.ico?v=201701041855">
+  <meta name="msapplication-config" content="http://localhost:4000/favicons/browserconfig.xml?v=201701041855">
+  <meta name="theme-color" content="#00d1b2">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+  <body class="layout-documentation page-form">
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost:4000">
+        <h3>My Style</h3>
+      </a>
+
+      <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navMenuDocumentation" class="navbar-menu">
+      <div class="navbar-start">
+        <a
+          class="navbar-item bd-navbar-item-documentation  is-active"
+          href="/documentation">
+        <span class="icon has-text-primary">
+          <i class="fas fa-book"></i>
+        </span>
+          <span class="is-hidden-touch is-hidden-widescreen">
+          Docs
+        </span>
+          <span class="is-hidden-desktop-only">
+          Documentation
+        </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<main class="bd-main">
+  <div class="bd-side-background"></div>
+  <div class="bd-main-container container">
+    <div class="bd-duo">
+      <div class="bd-lead">
+        <div class="bd-breadcrumb">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      
+        
+        <li>
+          <a href="http://localhost:4000">Home</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation">Documentation</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation/form">Form</a>
+        </li>
+      
+        
+        <li class="is-active">
+          <a href="http://localhost:4000/documentation/form/file">File</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+    <nav class="bd-prev-next">
+      
+        <a href="http://localhost:4000/documentation/form/radio" title="Radio">
+          ←
+        </a>
+      
+
+      
+        <span>
+          →
+        </span>
+      
+    </nav>
+  
+</div>
+
+
+        <header class="bd-header">
+          <div class="bd-header-titles">
+            <h1 class="title">
+              File upload
+            </h1>
+            <p class="subtitle is-4">
+              
+                A custom <strong>file upload</strong> input, without JavaScript
+              
+            </p>
+            
+              <div id="meta" class="field is-grouped is-grouped-multiline">
+
+  
+
+  
+    <div class="control">
+      <div class="tags">
+        <span class="tag is-warning">Experimental</span>
+      </div>
+    </div>
+  
+
+  
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Colors</span>
+      
+        <a class="tag is-success" href="#colors">Yes</a>
+      
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Sizes</span>
+      
+        <a class="tag is-success" href="#sizes">Yes</a>
+      
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Variables</span>
+      
+        <a class="tag is-success" href="#variables">Yes</a>
+      
+    </div>
+  </div>
+</div>
+
+            
+          </div>
+        </header>
+
+        
+          <nav class="bd-tabs">
+            <div class="tabs">
+              <ul>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/form/general">
+                      General
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/form/input">
+                      Input
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/form/textarea">
+                      Textarea
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/form/select">
+                      Select
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/form/checkbox">
+                      Checkbox
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/form/radio">
+                      Radio
+                    </a>
+                  </li>
+                
+                  
+                  <li class="is-active">
+                    <a href="http://localhost:4000/documentation/form/file">
+                      File
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </nav>
+        
+
+        <div class="bd-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content">
+  <p>
+    The <code>.file</code> element is a simple <strong>interactive label</strong> that wraps an <code>&lt;input type="file"&gt;</code>. It comprises several sub-elements:
+  </p>
+  <ul>
+    <li>
+      <code>.file</code> the main <strong>container</strong>
+      <ul>
+        <li>
+          <code>.file-label</code> the actual <strong>interactive</strong> and clickable part of the element
+          <ul>
+            <li>
+              <code>.file-input</code> the <strong>native</strong> file input, hidden for styling purposes
+            </li>
+            <li>
+              <code>.file-cta</code> the upload <strong>call-to-action</strong>
+              <ul>
+                <li>
+                  <code>.file-icon</code> an optional <strong>upload</strong> icon
+                </li>
+                <li>
+                  <code>.file-label</code> the "Choose a file…" text
+                </li>
+              </ul>
+            </li>
+            <li>
+              <code>.file-name</code> a container for the <strong>chosen file</strong> name
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="file">
+  <label class="file-label">
+    <input class="file-input" type="file" name="resume">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+  </label>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+        Choose a file…
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="modifiers" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Modifiers
+  </span>
+  <a class="bd-anchor-link" href="#modifiers">
+    #
+  </a>
+</h3>
+
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        With the <code>.has-name</code> modifier combined with the <code>.file-name</code> element, you can add a <strong>placeholder</strong> for the selected file name.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="file has-name">
+  <label class="file-label">
+    <input class="file-input" type="file" name="resume">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+    <span class="file-name">
+      Screen Shot 2017-07-29 at 15.54.25.png
+    </span>
+  </label>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file has-name"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+        Choose a file…
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+      Screen Shot 2017-07-29 at 15.54.25.png
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        You can move the CTA to the <strong>right side</strong> with the <code>.is-right</code> modifier.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="file has-name is-right">
+  <label class="file-label">
+    <input class="file-input" type="file" name="resume">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+    <span class="file-name">
+      Screen Shot 2017-07-29 at 15.54.25.png
+    </span>
+  </label>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file has-name is-right"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+        Choose a file…
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+      Screen Shot 2017-07-29 at 15.54.25.png
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        You can also <strong>expand</strong> the name to fill up the space with the <code>.is-fullwidth</code> modifier.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="file has-name is-fullwidth">
+  <label class="file-label">
+    <input class="file-input" type="file" name="resume">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+    <span class="file-name">
+      Screen Shot 2017-07-29 at 15.54.25.png
+    </span>
+  </label>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file has-name is-fullwidth"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+        Choose a file…
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+      Screen Shot 2017-07-29 at 15.54.25.png
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        You can have a <strong>boxed block</strong> with the <code>.is-boxed</code> modifier.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="file is-boxed">
+  <label class="file-label">
+    <input class="file-input" type="file" name="resume">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+  </label>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-boxed"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+        Choose a file…
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        You can <strong>combine</strong> <code>.has-name</code> and <code>.is-boxed</code>.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="file has-name is-boxed">
+  <label class="file-label">
+    <input class="file-input" type="file" name="resume">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+    <span class="file-name">
+      Screen Shot 2017-07-29 at 15.54.25.png
+    </span>
+  </label>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file has-name is-boxed"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+        Choose a file…
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+      Screen Shot 2017-07-29 at 15.54.25.png
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="colors" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Colors
+  </span>
+  <a class="bd-anchor-link" href="#colors">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    You can style the file element by appending one of the <strong>10 color modifiers</strong>:
+  </p>
+  <ul>
+    
+      <li>
+        <code>is-white</code>
+      </li>
+    
+      <li>
+        <code>is-black</code>
+      </li>
+    
+      <li>
+        <code>is-light</code>
+      </li>
+    
+      <li>
+        <code>is-dark</code>
+      </li>
+    
+      <li>
+        <code>is-primary</code>
+      </li>
+    
+      <li>
+        <code>is-link</code>
+      </li>
+    
+      <li>
+        <code>is-info</code>
+      </li>
+    
+      <li>
+        <code>is-success</code>
+      </li>
+    
+      <li>
+        <code>is-warning</code>
+      </li>
+    
+      <li>
+        <code>is-danger</code>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    bd-is-clipped
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field">
+  <div class="file is-primary">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Primary file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-info has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Info file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-warning is-boxed">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-cloud-upload-alt"></i>
+        </span>
+        <span class="file-label">
+          Warning file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-danger has-name is-boxed">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-cloud-upload-alt"></i>
+        </span>
+        <span class="file-label">
+          Danger file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code  ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Primary file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-info has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Info file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-warning is-boxed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud-upload-alt"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Warning file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-danger has-name is-boxed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-cloud-upload-alt"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Danger file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="sizes" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Sizes
+  </span>
+  <a class="bd-anchor-link" href="#sizes">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    You can append one of <strong>3 additional sizes</strong>:
+  </p>
+  <ul>
+    <li>
+      <code>.is-small</code>
+    </li>
+    <li>
+      <code>.is-medium</code>
+    </li>
+    <li>
+      <code>.is-large</code>
+    </li>
+  </ul>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    bd-is-clipped
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field">
+  <div class="file is-small">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Small file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Normal file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-medium">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Medium file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-large">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Large file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code  ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-small"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Small file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Normal file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-medium"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Medium file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Large file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    bd-is-clipped
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field">
+  <div class="file is-small has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Small file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Normal file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-medium has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Medium file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-large has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Large file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code  ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-small has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Small file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Normal file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-medium has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Medium file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-large has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Large file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    bd-is-clipped
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field">
+  <div class="file is-small is-boxed">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Small file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-boxed">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Normal file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-medium is-boxed">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Medium file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-large is-boxed">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Large file…
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code  ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-small is-boxed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Small file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-boxed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Normal file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-medium is-boxed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Medium file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-large is-boxed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Large file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    bd-is-clipped
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field">
+  <div class="file is-small is-boxed has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Small file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-boxed has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Normal file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-medium is-boxed has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Medium file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+<div class="field">
+  <div class="file is-large is-boxed has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Large file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code  ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-small is-boxed has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Small file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-boxed has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Normal file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-medium is-boxed has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Medium file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-large is-boxed has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Large file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="alignment" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Alignment
+  </span>
+  <a class="bd-anchor-link" href="#alignment">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    You can <strong>align</strong> the file input:
+  </p>
+  <ul>
+    <li>
+      to the <strong>center</strong> with the <code>is-centered</code> modifier
+    </li>
+    <li>
+      to the <strong>right</strong> with the <code>is-right</code> modifier
+    </li>
+  </ul>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field">
+  <div class="file is-centered is-boxed is-success has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Centered file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-centered is-boxed is-success has-name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Centered file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field">
+  <div class="file is-right is-info">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Right file…
+        </span>
+      </span>
+      <span class="file-name">
+        Screen Shot 2017-07-29 at 15.54.25.png
+      </span>
+    </label>
+  </div>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"file is-right is-info"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"file-input"</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"resume"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-cta"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-upload"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-label"</span><span class="nt">&gt;</span>
+          Right file…
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"file-name"</span><span class="nt">&gt;</span>
+        Screen Shot 2017-07-29 at 15.54.25.png
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="javascript" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    JavaScript
+  </span>
+  <a class="bd-anchor-link" href="#javascript">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    A file upload input requires JavaScript to <strong>retrieve</strong> the <strong>selected file name</strong>.
+    <br>
+    User <a href="https://github.com/chintanbanugaria"><strong>@chintanbanugaria</strong></a> on GitHub <a href="https://github.com/jgthms/bulma/issues/280#issuecomment-294099510">has provided</a> a simple solution <a href="https://jsfiddle.net/chintanbanugaria/uzva5byy/">on JSFiddle</a>.
+  </p>
+</div>
+
+
+
+
+
+
+
+  
+    <hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="variables" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Variables
+  </span>
+  <a class="bd-anchor-link" href="#variables">
+    #
+  </a>
+</h3>
+
+  
+
+  
+    <div class="content">
+      <p>You can use these variables to <strong>customize</strong> this element. Simply set one or multiple of these variables <em>before</em> importing Bulma. <a href="http://localhost:4000/documentation/overview/customize/">Learn how</a>.</p>
+    </div>
+  
+
+  <div class="table-container">
+    <table class="table is-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-border-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$border</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 86%);"></span>
+<code>hsl(0, 0%, 86%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-radius</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$radius</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>4px</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-cta-background-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$white-ter</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-cta-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-dark</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+<code>hsl(0, 0%, 29%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-cta-hover-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-darker</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-cta-active-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-darker</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-name-border-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$border</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 86%);"></span>
+<code>hsl(0, 0%, 86%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-name-border-style</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        string
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>solid</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-name-border-width</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1px 1px 1px 0</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$file-name-max-width</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>16em</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+        
+      </tbody>
+    </table>
+  </div>
+
+
+
+        </div>
+
+        <nav class="bd-prev-next-bis">
+          
+            <a class="bd-prev-next-bis-previous" href="http://localhost:4000/documentation/form/radio" title="Radio">
+              ← Radio
+            </a>
+          
+
+          
+        </nav>
+
+      </div>
+
+      <aside class="bd-side">
+        
+          <nav id="categories" class="bd-categories">
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/overview">
+          <strong>Overview</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/start">
+              Start
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/classes">
+              Classes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/modular">
+              Modularity
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/colors">
+              Colors
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/functions">
+              Functions
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/mixins">
+              Mixins
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/customize">
+          <strong>Customize</strong>
+          
+            <span class="tag is-success">
+              New!
+            </span>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/concepts">
+              Concepts
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/variables">
+              Variables
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-node-sass">
+              With node-sass
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-sass-cli">
+              With Sass CLI
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-webpack">
+              With webpack
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/modifiers">
+          <strong>Modifiers</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/syntax">
+              Syntax
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/helpers">
+              Helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/responsive-helpers">
+              Responsive helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/color-helpers">
+              Color helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/typography-helpers">
+              Typography helpers
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/columns">
+          <strong>Columns</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/basics">
+              Basics
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/sizes">
+              Sizes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/nesting">
+              Nesting
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/gap">
+              Gap
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/options">
+              Options
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/layout">
+          <strong>Layout</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/container">
+              Container
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/level">
+              Level
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/media-object">
+              Media Object
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/hero">
+              Hero
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/section">
+              Section
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/footer">
+              Footer
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/tiles">
+              Tiles
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category is-active">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/form">
+          <strong>Form</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/general">
+              General
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/input">
+              Input
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/textarea">
+              Textarea
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/select">
+              Select
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/checkbox">
+              Checkbox
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/radio">
+              Radio
+            </a>
+          </li>
+        
+          
+          <li class="is-current">
+            <a href="http://localhost:4000/documentation/form/file">
+              File
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/elements">
+          <strong>Elements</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/box">
+              Box
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/button">
+              Button
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/content">
+              Content
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/delete">
+              Delete
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/icon">
+              Icon
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/image">
+              Image
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/notification">
+              Notification
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/progress">
+              Progress bars
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/table">
+              Table
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/tag">
+              Tag
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/title">
+              Title
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/components">
+          <strong>Components</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/breadcrumb">
+              Breadcrumb
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/card">
+              Card
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/dropdown">
+              Dropdown
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/menu">
+              Menu
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/message">
+              Message
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/modal">
+              Modal
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/navbar">
+              Navbar
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/pagination">
+              Pagination
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/panel">
+              Panel
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/tabs">
+              Tabs
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</nav>
+
+
+
+          <div id="anchorsReference" class="bd-anchors-reference"></div>
+<nav id="anchors" class="bd-anchors">
+  <p class="bd-anchors-title">
+    On this page
+  </p>
+
+  <ul class="bd-anchors-list"></ul>
+</nav>
+
+        
+      </aside>
+    </div>
+  </div>
+</main>
+
+  </body>
+</html>

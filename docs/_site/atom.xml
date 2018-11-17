@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>My Style</title>
+    <description>My Style is a CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.</description>
+    <link>http://localhost:4000</link>
+    <id>http://localhost:4000</id>
+    <updated>2018-11-17T13:04:59+08:00</updated>
+    <author>
+      <name>My Style</name>
+      <email>bbxdesign@gmail.com</email>
+    </author>
+    <atom:link href="http://localhost:4000/atom.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Automatic variables documentation</title>
+        
+        <description>Bulma is highly customizable because there are **415 Sass variables** across **28 files**.
+
+More and more CSS values are transformed into Sass variables for easy customization. And each new Bulma feature is required to come with its own set of variables.
+
+While providing these variables is necessary, it's only useful if developers are aware they exist! Keeping **in sync** the documentation and the source files used to be a manual process. It is now **automatic**, thanks to a script that parses the source files and outputs the numerous Sass variables as JSON data.
+
+&lt;figure&gt;
+  &lt;img src=&quot;{{ site.url }}/images/blog/variables/json.png&quot; alt=&quot;JSON variables&quot; width=&quot;275&quot; height=&quot;775&quot;&gt;
+&lt;/figure&gt;
+
+As an added bonus, each variable row in the docs comes with its **type** and its **computed value** (if applicable).
+
+&lt;figure&gt;
+  &lt;img src=&quot;{{ site.url }}/images/blog/variables/variables-table.png&quot; alt=&quot;Variables table&quot; width=&quot;597&quot; height=&quot;212&quot;&gt;
+&lt;/figure&gt;
+</description>
+        <pubDate>Wed, 20 Jun 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/06/20/automatic-variables-documentation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/20/automatic-variables-documentation/</guid>
+      </item>
+    
+      <item>
+        <title>Migrating to v0.7.0</title>
+        
+        <description>A new major Bulma update is out: [v0.7.0](#)!
+
+While this update is mainly focused on a massive [website redesign](/2018/04/13/website-redesign/), it also includes a few bug fixes, some new features, and some variable changes.
+
+These variable changes are documented here, so you can edit or revert them if needed.
+
+{% include elements/anchor.html name=&quot;Updated default values&quot; %}
+
+{% for item in site.data.blog.migratingv070.updated %}
+  &lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;3&quot;&gt;
+          File
+          &lt;code&gt;{{ item.file }}&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Variable&lt;/th&gt;
+        &lt;th&gt;From&lt;/th&gt;
+        &lt;th&gt;To&lt;/th&gt;
+      &lt;/tr&gt;
+      {% for change in item.changes %}
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;{{ change.variable }}&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;{{ change.from }}&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;{{ change.to }}&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      {% endfor %}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+{% endfor %}
+
+{% include elements/anchor.html name=&quot;New variables&quot; %}
+
+{% for item in site.data.blog.migratingv070.new %}
+  &lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;2&quot;&gt;
+          File
+          &lt;code&gt;{{ item.file }}&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+      {% for newcomer in item.newcomers %}
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;{{ newcomer.name }}&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;{{ newcomer.value }}&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      {% endfor %}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+{% endfor %}
+
+{% include elements/anchor.html name=&quot;Removed variables&quot; %}
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;File&lt;/th&gt;
+      &lt;th&gt;Removed&lt;/th&gt;
+      &lt;th&gt;Replaced with&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    {% for item in site.data.blog.migratingv070.removed %}
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;code&gt;{{ item.file }}&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;{{ item.before }}&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          {% for newcomer in item.after %}
+            &lt;code&gt;{{ newcomer }}&lt;/code&gt;
+          {% endfor %}
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    {% endfor %}
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sat, 14 Apr 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/04/14/migration-to-v070/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/14/migration-to-v070/</guid>
+      </item>
+    
+      <item>
+        <title>Website redesign: clearer layout, easier navigation, better content, and much more!</title>
+        
+        <description>The Bulma website has been widely redesigned! There's been a lot of work, to say the least:
+
+&lt;figure&gt;
+  &lt;img src=&quot;{{ site.url }}/images/blog/v7/files.png&quot; alt=&quot;files&quot; width=&quot;312&quot; height=&quot;37&quot;&gt;
+  &lt;br&gt;
+  &lt;img src=&quot;{{ site.url }}/images/blog/v7/diff.png&quot; alt=&quot;diff&quot; width=&quot;167&quot; height=&quot;38&quot;&gt;
+&lt;/figure&gt;
+
+Just see for yourself!
+
+&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;p class=&quot;has-text-centered has-text-grey-light&quot;&gt;Before&lt;/p&gt;
+    &lt;a href=&quot;{{ site.url }}/images/blog/v7/before.png&quot;&gt;
+      &lt;img src=&quot;{{ site.url }}/images/blog/v7/before.png&quot; alt=&quot;v7 website&quot; width=&quot;1400&quot; height=&quot;1200&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;p class=&quot;has-text-centered has-text-grey-light&quot;&gt;After&lt;/p&gt;
+    &lt;a href=&quot;{{ site.url }}/images/blog/v7/after.png&quot;&gt;
+      &lt;img src=&quot;{{ site.url }}/images/blog/v7/after.png&quot; alt=&quot;v7 website&quot; width=&quot;1400&quot; height=&quot;1200&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+{% include elements/anchor.html name=&quot;Navbar&quot; %}
+
+The **navbar** has been updated with a lighter markup and cleaner design:
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/images/blog/v7/navbar.png&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/navbar.png&quot; alt=&quot;navbar&quot; width=&quot;1080&quot; height=&quot;84&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+This doesn't affect the current navbars. There's actually a new modifier called `is-spaced` that was created for this new navbar. Documentation coming soon!
+
+{% include elements/anchor.html name=&quot;Customize example&quot; %}
+
+On the homepage, there's a new [**customization** section with a live example](/#customize):
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/#customize&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/customize.png&quot; alt=&quot;customize&quot; width=&quot;492&quot; height=&quot;582&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+{% include elements/anchor.html name=&quot;Breadcrumb&quot; %}
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/images/blog/v7/breadcrumb.png&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/breadcrumb.png&quot; alt=&quot;breadcrumb&quot; width=&quot;422&quot; height=&quot;24&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+A **breadcrumb** is now visible at the top of each page, to easily navigate up and down the hierarchy.
+
+This has led to the creation of new **intermediate pages**:
+
+* [documentation](/documentation)
+* [documentation/modifiers](/documentation/modifiers)
+* [documentation/columns](/documentation/columns)
+* [documentation/layout](/documentation/layout)
+* [documentation/form](/documentation/form)
+* [documentation/elements](/documentation/elements)
+* [documentation/components](/documentation/components)
+* [more](/more)
+
+{% include elements/anchor.html name=&quot;Links&quot; %}
+
+These intermediate pages have new **link boxes** that help dive into each sub-category:
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/images/blog/v7/links.png&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/links.png&quot; alt=&quot;footer links&quot; width=&quot;664&quot; height=&quot;468&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+{% include elements/anchor.html name=&quot;Previous/Next&quot; %}
+
+Next to the breadcrumb, you can easily navigate to the **sibling** pages with the **previous** and **next** links:
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/images/blog/v7/prevnext.png&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/prevnext.png&quot; alt=&quot;prevnext buttons&quot; width=&quot;48&quot; height=&quot;24&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+These links are also available at the bottom:
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/images/blog/v7/prevnextbis.png&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/prevnextbis.png&quot; alt=&quot;prevnextbis buttons&quot; width=&quot;664&quot; height=&quot;58&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+{% include elements/anchor.html name=&quot;Categories&quot; %}
+
+There's a new **sidebar** including a navigation menu with all the categories and sub-categories:
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/images/blog/v7/categories.png&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/categories.png&quot; alt=&quot;categories menu&quot; width=&quot;256&quot; height=&quot;397&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+{% include elements/anchor.html name=&quot;Scroll spy&quot; %}
+
+On some pages below the categories, you'll find a new menu called &quot;On this page&quot; which is actually a **scroll spy**:
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/images/blog/v7/scrollspy.png&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/scrollspy.png&quot; alt=&quot;scrollspy menu&quot; width=&quot;199&quot; height=&quot;341&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+{% include elements/anchor.html name=&quot;Footer&quot; %}
+
+The footer has been redesigned as well. Among other things, there's a **sitemap** available:
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/images/blog/v7/footer.png&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/v7/footer.png&quot; alt=&quot;footer links&quot; width=&quot;984&quot; height=&quot;302&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+{% include elements/anchor.html name=&quot;Code&quot; %}
+
+The Bulma website is built with **Jekyll**. In the process of this redesign, the underlying code that helps maintain this website has been optimized and cleaned up as well.
+
+This will help further updates to be easier.
+</description>
+        <pubDate>Fri, 13 Apr 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/04/13/website-redesign/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/13/website-redesign/</guid>
+      </item>
+    
+      <item>
+        <title>Bulma supports Font Awesome&amp;nbsp;5</title>
+        
+        <description>Bulma is **icon library agnostic**: this means that you can use _any_ icon font library (like Font Awesome 4 or 5, Material Design Icons, Open Iconic, Ionicons…) with Bulma's `icon` class.
+
+As a result, **Bulma already supports Font Awesome 5**! 😃
+
+Since the `icon` element is simply a **container** for any icon font *allowing the layout to reserve a spot for the icon while it loads), it supports any size of Font Awesome 4 and 5.
+
+For the sake of being in sync with Bulma users, I've recently updated the website to actually use Font Awesome 5! The process of **migrating** from Font Awesome 4 to 5 is straightforward. You simply need to:
+
+1. include Font Awesome 5 instead, [using the script tag](https://fontawesome.com/get-started)
+2. replace `fa` classes with their `fas` and `fab` equivalents
+
+That's it!
+
+Check out the [icon documentation](/documentation/elements/icon/).
+</description>
+        <pubDate>Thu, 18 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/01/18/bulma-supports-font-awesome-5/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/18/bulma-supports-font-awesome-5/</guid>
+      </item>
+    
+      <item>
+        <title>Bulma is on Patreon!</title>
+        
+        <description>**Bulma** has now its own [Patreon page](https://www.patreon.com/jgthms):
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://www.patreon.com/jgthms&quot; target=&quot;_blank&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/patreon-homepage.png&quot; alt=&quot;Bulma Patreon homepage&quot; width=&quot;840&quot; height=&quot;525&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+This will allow people to easily support Bulma, and ensure its future development.
+</description>
+        <pubDate>Tue, 14 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/11/14/bulma-is-on-patreon/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/14/bulma-is-on-patreon/</guid>
+      </item>
+    
+      <item>
+        <title>New feature: fixed navbar</title>
+        
+        <description>You can now fix a [navbar](/documentation/components/navbar/#fixed-navbar) to the **top** or the **bottom**:
+
+&lt;figure&gt;
+  &lt;video width=&quot;602.5&quot; height=&quot;360&quot; autoplay muted loop&gt;
+    &lt;source src=&quot;{{ site.url }}/images/blog/fixed-navbar.mp4&quot; type=&quot;video/mp4&quot;&gt;
+  &lt;/video&gt;
+&lt;/figure&gt;
+
+[Check it out!](/documentation/components/navbar/#fixed-navbar)
+
+As a added **bonus**, the bottom navbar required a new **dropup** feature which has also been implemented!
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/documentation/components/navbar/#fixed-navbar&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/dropup.png&quot; alt=&quot;Navbar dropup&quot; width=&quot;660&quot; height=&quot;239&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+</description>
+        <pubDate>Wed, 01 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/11/01/fixed-navbar/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/01/fixed-navbar/</guid>
+      </item>
+    
+      <item>
+        <title>New feature: list of buttons</title>
+        
+        <description>Similarly to the [list of tags](/2017/08/03/list-of-tags/) launched a few months ago, the [button](/documentation/elements/button/) has its own **list of buttons**:
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/documentation/elements/button/#list-of-buttons&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/list-of-buttons.png&quot; alt=&quot;List of buttons in CSS&quot; width=&quot;660&quot; height=&quot;550&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+Although you could already **group** buttons by using [from groups](/documentation/form/general/#form-group), this new `buttons` class makes everything easier.
+</description>
+        <pubDate>Sun, 22 Oct 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/10/22/list-of-buttons/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/22/list-of-buttons/</guid>
+      </item>
+    
+      <item>
+        <title>Roses are red – Links are blue</title>
+        
+        <description>By default, a browser will display links in &lt;strong style=&quot;color: blue;&quot;&gt;blue&lt;/strong&gt;. Bulma has up until now used the `$primary` color as the `$link` color:
+
+```sass
+// Old styles
+$link: $primary !default
+```
+
+But the _primary_ color is mostly used as the **brand** color, and is not necessarily well suited for links. For readability purposes, and to add more flexibility to your design choices:
+
+* the `$link` color defaults to `$blue`
+* `$info` is using the new `$cyan` color
+* `$link` has been added to the `$colors` map as well
+
+```sass
+// New styles
+$link: $blue !default
+$info: $cyan !default
+```
+
+&lt;div class=&quot;message is-danger&quot;&gt;
+  &lt;div class=&quot;message-header&quot;&gt;
+    Deprecation warning
+  &lt;/div&gt;
+  &lt;div class=&quot;message-body&quot;&gt;
+    &lt;p&gt;
+      Because the modifier &lt;code&gt;is-link&lt;/code&gt; for &lt;strong&gt;buttons&lt;/strong&gt; already existed, it has been renamed to &lt;code&gt;is-text&lt;/code&gt;.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+As such, the following components are now **blue**:
+
+* [breadcrumb](/documentation/components/breadcrumb/)
+* [dropdown](/documentation/components/dropdown/)
+* [navbar](/documentation/components/navbar/)
+* [pagination](/documentation/components/pagination/)
+* [tabs](/documentation/components/tabs/)
+* [menu](/documentation/components/menu/)
+* [panel](/documentation/components/panel/)
+
+All Bulma elements and components that support **color** modifiers now support the `.is-link` color:
+
+```html
+&lt;div class=&quot;notification is-link&quot;&gt;
+  Link notification.
+&lt;/div&gt;
+
+&lt;div class=&quot;notification is-info&quot;&gt;
+  Info notification.
+&lt;/div&gt;
+
+&lt;button class=&quot;button is-link&quot;&gt;
+  Link button
+&lt;/button&gt;
+
+&lt;button class=&quot;button is-info&quot;&gt;
+  Info button
+&lt;/button&gt;
+```
+
+&lt;div class=&quot;notification is-link&quot;&gt;
+  Link notification.
+&lt;/div&gt;
+
+&lt;div class=&quot;notification is-info&quot;&gt;
+  Info notification.
+&lt;/div&gt;
+
+&lt;button class=&quot;button is-link&quot;&gt;
+  Link button
+&lt;/button&gt;
+
+&lt;button class=&quot;button is-info&quot;&gt;
+  Info button
+&lt;/button&gt;
+
+If you want to use the `$primary` color for your links, just **customize** your Bulma setup by including these rules:
+
+```sass
+$link: $primary !default
+$link-invert: $primary-invert !default
+$link-focus-border: $primary !default
+```
+</description>
+        <pubDate>Mon, 09 Oct 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/10/09/roses-are-red-links-are-blue/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/09/roses-are-red-links-are-blue/</guid>
+      </item>
+    
+      <item>
+        <title>New feature: list of tags</title>
+        
+        <description>The [tag](/documentation/elements/tag/) is a small but useful element that can be used in many contexts, to **enhance** the meaning of the text it's attached to.
+
+A tag rarely comes on its own though, so Bulma now supports [list of tags](/documentation/elements/tag/#list-of-tags). The same way you can [group controls](together), you can now **group tags together** to form a list that can span multiple lines.
+
+&lt;figure&gt;
+  &lt;a href=&quot;{{ site.url }}/documentation/elements/tag/#list-of-tags&quot;&gt;
+    &lt;img src=&quot;{{ site.url }}/images/blog/list-of-tags.png&quot; alt=&quot;List of tags in CSS&quot; width=&quot;660&quot; height=&quot;401&quot;&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+As a **bonus**, there is also a [delete tag](/documentation/elements/tag/#combinations) available!
+</description>
+        <pubDate>Thu, 03 Aug 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/08/03/list-of-tags/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/03/list-of-tags/</guid>
+      </item>
+    
+      <item>
+        <title>Bulma / Bootstrap comparison</title>
+        
+        <description>Bulma has always been a Bootstrap fan, inspired by its goal and purpose.
+
+Some users ask why they should use Bulma over Bootstrap, and there is **no definite answer**, because while both CSS frameworks share _similarities_, they also **differ** in many ways.
+
+The new page [\&quot;Alternative to Bootstrap\&quot;](https://bulma.io/alternative-to-bootstrap/) draws a **feature comparison** to help undecided users choose the right tool for their web design needs, which can be either Bulma or Bootstrap.
+</description>
+        <pubDate>Tue, 01 Aug 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/08/01/bulma-bootstrap-comparison/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/01/bulma-bootstrap-comparison/</guid>
+      </item>
+    
+  </channel>
+</rss>

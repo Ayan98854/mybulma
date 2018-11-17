@@ -1,0 +1,4522 @@
+<!DOCTYPE html>
+<html lang="en" class="route-documentation">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Style is a CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.">
+
+  <title>Variables | My Style</title>
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/bulma-docs.min.css?v=201811171301">
+
+  <link rel="canonical" href="http://localhost:4000/documentation/overview/variables/">
+  <link rel="alternate" type="application/rss+xml" title="My Style" href="http://localhost:4000/atom.xml">
+
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:type" content="website">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+
+
+  <!-- Shared social media -->
+  
+    <meta property="og:title" content="Variables">
+    <meta name="twitter:title" content="Variables">
+  
+
+  
+    
+    
+      <meta property="og:description" content="An overview of what Bulma as a framework is all about">
+      <meta name="twitter:description" content="An overview of what Bulma as a framework is all about">
+    
+  
+
+  
+    <meta property="og:image" content="http://localhost:4000/images/bulma-banner.png">
+    <meta name="twitter:image" content="http://localhost:4000/images/bulma-banner.png">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="http://localhost:4000/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="http://localhost:4000/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="http://localhost:4000/favicons/favicon.ico?v=201701041855">
+  <meta name="msapplication-config" content="http://localhost:4000/favicons/browserconfig.xml?v=201701041855">
+  <meta name="theme-color" content="#00d1b2">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+  <body class="layout-documentation page-overview">
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost:4000">
+        <h3>My Style</h3>
+      </a>
+
+      <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navMenuDocumentation" class="navbar-menu">
+      <div class="navbar-start">
+        <a
+          class="navbar-item bd-navbar-item-documentation  is-active"
+          href="/documentation">
+        <span class="icon has-text-primary">
+          <i class="fas fa-book"></i>
+        </span>
+          <span class="is-hidden-touch is-hidden-widescreen">
+          Docs
+        </span>
+          <span class="is-hidden-desktop-only">
+          Documentation
+        </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<main class="bd-main">
+  <div class="bd-side-background"></div>
+  <div class="bd-main-container container">
+    <div class="bd-duo">
+      <div class="bd-lead">
+        <div class="bd-breadcrumb">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      
+        
+        <li>
+          <a href="http://localhost:4000">Home</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation">Documentation</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation/overview">Overview</a>
+        </li>
+      
+        
+        <li class="is-active">
+          <a href="http://localhost:4000/documentation/overview/variables">Variables</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+</div>
+
+
+        <header class="bd-header">
+          <div class="bd-header-titles">
+            <h1 class="title">
+              Variables
+            </h1>
+            <p class="subtitle is-4">
+              
+                See how Bulma uses <strong>Sass variables</strong> to allow easy customization
+              
+            </p>
+            
+          </div>
+        </header>
+
+        
+          <nav class="bd-tabs">
+            <div class="tabs">
+              <ul>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/start">
+                      Start
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/classes">
+                      Classes
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/modular">
+                      Modularity
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/responsiveness">
+                      Responsiveness
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/colors">
+                      Colors
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/functions">
+                      Functions
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/mixins">
+                      Mixins
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </nav>
+        
+
+        <div class="bd-content">
+          <meta http-equiv="refresh" content="0; url=http://localhost:4000/documentation/customize/variables/">
+
+
+
+
+
+
+<div class="content">
+  <p>Bulma has <strong>two</strong> variable files divided into <strong>4</strong> sections:</p>
+
+  <ol>
+    <li>
+      <strong>Initial variables</strong>: where you define variables by <strong>literal value</strong>, like:
+      <ul>
+        <li><strong>colors</strong>: <code>$blue: hsl(217, 71%,  53%)</code></li>
+        <li><strong>font sizes</strong>: <code>$size-1: 3rem</code></li>
+        <li><strong>dimensions</strong>: <code>$gap: 64px</code></li>
+        <li><strong>other values</strong>: <code>$easing: ease-out</code> or <code>$radius-large: 6px</code></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Derived variables</strong> where variables are <strong>calculated</strong> from the values set in the previous file. For example, you can have:
+      <ul>
+        <li>
+          <strong>Primary colors</strong> derived from the initial variables:
+          <ul>
+            <li><code>$primary: $turquoise</code></li>
+            <li><code>$link: $blue</code></li>
+            <li><code>$info: $cyan</code></li>
+            <li><code>$success: $green</code></li>
+            <li><code>$warning: $yellow</code></li>
+            <li><code>$danger: $red</code></li>
+            <li><code>$dark: $grey-darker</code></li>
+            <li><code>$text: $grey-dark</code></li>
+          </ul>
+        </li>
+        <li><code>$background: $white-ter</code>: a general background color</li>
+        <li><code>$link: $blue</code>: the links use the primary color</li>
+        <li><code>$family-primary: $family-sans-serif</code>: the primary font family is the sans-serif one</li>
+        <li>
+          <strong>Lists and maps</strong> which are collections of already defined variables:
+          <ul>
+            <li><code>$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "link": ($link, $link-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)), $custom-colors)</code></li>
+            <li><code>$shades: mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades)</code></li>
+            <li><code>$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+  <p>
+    To <strong>override</strong> any of these variables, just set them <em>before</em> importing Bulma.
+  </p>
+</div>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="initial-variables" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Initial variables
+  </span>
+  <a class="bd-anchor-link" href="#initial-variables">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    These are <a href="https://github.com/jgthms/bulma/blob/master/sass/utilities/initial-variables.sass" target="_blank" rel="nofollow">initial variables</a> with a <strong>literal</strong> value.
+  </p>
+</div>
+
+<table class="table is-bordered">
+  <tbody>
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$black</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 4%);"></span>
+<code>hsl(0, 0%, 4%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$black-bis</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 7%);"></span>
+<code>hsl(0, 0%, 7%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$black-ter</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 14%);"></span>
+<code>hsl(0, 0%, 14%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$grey-darker</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$grey-dark</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+<code>hsl(0, 0%, 29%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$grey</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 48%);"></span>
+<code>hsl(0, 0%, 48%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$grey-light</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 71%);"></span>
+<code>hsl(0, 0%, 71%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$grey-lighter</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 86%);"></span>
+<code>hsl(0, 0%, 86%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$white-ter</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$white-bis</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 98%);"></span>
+<code>hsl(0, 0%, 98%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$white</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(0, 0%, 100%);"></span>
+<code>hsl(0, 0%, 100%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$orange</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(14,  100%, 53%);"></span>
+<code>hsl(14,  100%, 53%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$yellow</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(48,  100%, 67%);"></span>
+<code>hsl(48,  100%, 67%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$green</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(141, 71%,  48%);"></span>
+<code>hsl(141, 71%,  48%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$turquoise</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(171, 100%, 41%);"></span>
+<code>hsl(171, 100%, 41%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$cyan</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(204, 86%,  53%);"></span>
+<code>hsl(204, 86%,  53%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$blue</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(217, 71%,  53%);"></span>
+<code>hsl(217, 71%,  53%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$purple</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(271, 100%, 71%);"></span>
+<code>hsl(271, 100%, 71%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$red</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: hsl(348, 100%, 61%);"></span>
+<code>hsl(348, 100%, 61%)</code>
+
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$family-sans-serif</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-family
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$family-monospace</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-family
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>monospace</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$render-mode</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        keyword
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>optimizeLegibility</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-1</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>3rem</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-2</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>2.5rem</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-3</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>2rem</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-4</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1.5rem</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-5</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1.25rem</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-6</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1rem</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-7</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>0.75rem</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$weight-light</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-weight
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>300</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$weight-normal</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-weight
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>400</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$weight-medium</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-weight
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>500</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$weight-semibold</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-weight
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>600</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$weight-bold</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-weight
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>700</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$gap</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>64px</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$tablet</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>769px</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$desktop</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        computed
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>960px + (2 * $gap)</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$widescreen</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        computed
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1152px + (2 * $gap)</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$widescreen-enabled</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        boolean
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>true</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$fullhd</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        computed
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1344px + (2 * $gap)</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$fullhd-enabled</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        boolean
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>true</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$easing</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        keyword
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>ease-out</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$radius-small</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>2px</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$radius</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>4px</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$radius-large</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>6px</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$radius-rounded</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>290486px</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$speed</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        duration
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>86ms</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+    
+    <tr>
+  <td >
+    <code style="white-space: nowrap;">$variable-columns</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        boolean
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>true</code>
+    
+  </td>
+
+  
+</tr>
+
+  
+  <tbody>
+</table>
+
+
+
+
+
+
+
+
+
+  
+    <hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="derived-variables" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Derived variables
+  </span>
+  <a class="bd-anchor-link" href="#derived-variables">
+    #
+  </a>
+</h3>
+
+  
+
+  
+    <div class="content">
+      <p>These are <a href="https://github.com/jgthms/bulma/blob/master/sass/utilities/derived-variables.sass" target="_blank" rel="nofollow">variables</a> with a value that <strong>references</strong> another variable.</p>
+    </div>
+  
+
+  <div class="table-container">
+    <table class="table is-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$primary</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$turquoise</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(171, 100%, 41%);"></span>
+<code>hsl(171, 100%, 41%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$info</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$cyan</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(204, 86%,  53%);"></span>
+<code>hsl(204, 86%,  53%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$success</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$green</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(141, 71%,  48%);"></span>
+<code>hsl(141, 71%,  48%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$warning</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$yellow</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(48,  100%, 67%);"></span>
+<code>hsl(48,  100%, 67%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$danger</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$red</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(348, 100%, 61%);"></span>
+<code>hsl(348, 100%, 61%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$light</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$white-ter</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$dark</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-darker</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$orange-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($orange)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$yellow-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($yellow)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: rgba(0, 0, 0, 0.7);"></span>
+<code>rgba(0, 0, 0, 0.7)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$green-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($green)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$turquoise-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($turquoise)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$cyan-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($cyan)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$blue-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($blue)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$purple-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($purple)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$red-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($red)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$primary-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$turquoise-invert</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$info-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$cyan-invert</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$success-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$green-invert</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$warning-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$yellow-invert</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: rgba(0, 0, 0, 0.7);"></span>
+<code>rgba(0, 0, 0, 0.7)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$danger-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$red-invert</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$light-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$dark</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$dark-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$light</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$background</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$white-ter</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$border</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-lighter</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 86%);"></span>
+<code>hsl(0, 0%, 86%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$border-hover</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-light</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 71%);"></span>
+<code>hsl(0, 0%, 71%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$text</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-dark</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+<code>hsl(0, 0%, 29%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$text-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>findColorInvert($text)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$text-light</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 48%);"></span>
+<code>hsl(0, 0%, 48%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$text-strong</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-darker</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$code</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$red</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(348, 100%, 61%);"></span>
+<code>hsl(348, 100%, 61%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$code-background</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$background</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$pre</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$text</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+<code>hsl(0, 0%, 29%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$pre-background</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$background</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$blue</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(217, 71%,  53%);"></span>
+<code>hsl(217, 71%,  53%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link-invert</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$blue-invert</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: #fff;"></span>
+<code>#fff</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link-visited</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$purple</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(271, 100%, 71%);"></span>
+<code>hsl(271, 100%, 71%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link-hover</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-darker</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link-hover-border</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-light</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 71%);"></span>
+<code>hsl(0, 0%, 71%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link-focus</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-darker</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link-focus-border</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$blue</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(217, 71%,  53%);"></span>
+<code>hsl(217, 71%,  53%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link-active</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-darker</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$link-active-border</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-dark</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+<code>hsl(0, 0%, 29%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$family-primary</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-family
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$family-sans-serif</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$family-secondary</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-family
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$family-sans-serif</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$family-code</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-family
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$family-monospace</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>monospace</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-small</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$size-7</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>0.75rem</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-normal</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$size-6</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>1rem</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-medium</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$size-5</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>1.25rem</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$size-large</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$size-4</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>1.5rem</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$custom-colors</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        keyword
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>null</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$custom-shades</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        keyword
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>null</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$colors</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        function
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "link": ($link, $link-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)), $custom-colors)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$shades</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        function
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades)</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$sizes</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        map
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+        
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="generic-variables" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Generic variables
+  </span>
+  <a class="bd-anchor-link" href="#generic-variables">
+    #
+  </a>
+</h3>
+
+  
+
+  
+    <div class="content">
+      <p>You can use the following <a href="" target="_blank">generic variables</a> for general <strong>customization</strong>. Simply set one or multiple of these variables <em>before</em> importing Bulma. <a href="http://localhost:4000/documentation/overview/customize/">Learn how</a>.</p>
+    </div>
+  
+
+  <div class="table-container">
+    <table class="table is-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$body-background-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$white</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 100%);"></span>
+<code>hsl(0, 0%, 100%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$body-size</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>16px</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$body-rendering</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        keyword
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>optimizeLegibility</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$body-family</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-family
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$family-primary</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$body-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$text</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+<code>hsl(0, 0%, 29%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$body-weight</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-weight
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$weight-normal</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>400</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$body-line-height</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        unitless
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1.5</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$code-family</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-family
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$family-code</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>monospace</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$code-padding</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>0.25em 0.5em 0.25em</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$code-weight</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-weight
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>normal</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$code-size</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>0.875em</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$hr-background-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$background</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$hr-height</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>2px</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$hr-margin</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>1.5rem 0</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$strong-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$text-strong</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$strong-weight</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        font-weight
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$weight-bold</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <code>700</code>
+        
+      
+    </td>
+  
+</tr>
+
+          
+        
+      </tbody>
+    </table>
+  </div>
+
+
+
+        </div>
+
+        <nav class="bd-prev-next-bis">
+          
+
+          
+        </nav>
+
+      </div>
+
+      <aside class="bd-side">
+        
+          <nav id="categories" class="bd-categories">
+  
+    
+    
+    
+
+    <div class="bd-category is-active">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/overview">
+          <strong>Overview</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/start">
+              Start
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/classes">
+              Classes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/modular">
+              Modularity
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/colors">
+              Colors
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/functions">
+              Functions
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/mixins">
+              Mixins
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/customize">
+          <strong>Customize</strong>
+          
+            <span class="tag is-success">
+              New!
+            </span>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/concepts">
+              Concepts
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/variables">
+              Variables
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-node-sass">
+              With node-sass
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-sass-cli">
+              With Sass CLI
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-webpack">
+              With webpack
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/modifiers">
+          <strong>Modifiers</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/syntax">
+              Syntax
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/helpers">
+              Helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/responsive-helpers">
+              Responsive helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/color-helpers">
+              Color helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/typography-helpers">
+              Typography helpers
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/columns">
+          <strong>Columns</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/basics">
+              Basics
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/sizes">
+              Sizes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/nesting">
+              Nesting
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/gap">
+              Gap
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/options">
+              Options
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/layout">
+          <strong>Layout</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/container">
+              Container
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/level">
+              Level
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/media-object">
+              Media Object
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/hero">
+              Hero
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/section">
+              Section
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/footer">
+              Footer
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/tiles">
+              Tiles
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/form">
+          <strong>Form</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/general">
+              General
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/input">
+              Input
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/textarea">
+              Textarea
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/select">
+              Select
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/checkbox">
+              Checkbox
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/radio">
+              Radio
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/file">
+              File
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/elements">
+          <strong>Elements</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/box">
+              Box
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/button">
+              Button
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/content">
+              Content
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/delete">
+              Delete
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/icon">
+              Icon
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/image">
+              Image
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/notification">
+              Notification
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/progress">
+              Progress bars
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/table">
+              Table
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/tag">
+              Tag
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/title">
+              Title
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/components">
+          <strong>Components</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/breadcrumb">
+              Breadcrumb
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/card">
+              Card
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/dropdown">
+              Dropdown
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/menu">
+              Menu
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/message">
+              Message
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/modal">
+              Modal
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/navbar">
+              Navbar
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/pagination">
+              Pagination
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/panel">
+              Panel
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/tabs">
+              Tabs
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</nav>
+
+
+
+          <div id="anchorsReference" class="bd-anchors-reference"></div>
+<nav id="anchors" class="bd-anchors">
+  <p class="bd-anchors-title">
+    On this page
+  </p>
+
+  <ul class="bd-anchors-list"></ul>
+</nav>
+
+        
+      </aside>
+    </div>
+  </div>
+</main>
+
+  </body>
+</html>

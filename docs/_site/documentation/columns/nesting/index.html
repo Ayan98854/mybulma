@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en" class="route-documentation">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Style is a CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.">
+
+  <title>Nesting columns | My Style</title>
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/bulma-docs.min.css?v=201811171301">
+
+  <link rel="canonical" href="http://localhost:4000/documentation/columns/nesting/">
+  <link rel="alternate" type="application/rss+xml" title="My Style" href="http://localhost:4000/atom.xml">
+
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:type" content="website">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+
+
+  <!-- Shared social media -->
+  
+    <meta property="og:title" content="Nesting columns">
+    <meta name="twitter:title" content="Nesting columns">
+  
+
+  
+    
+    
+      <meta property="og:description" content="The power of Flexbox in a simple interface">
+      <meta name="twitter:description" content="The power of Flexbox in a simple interface">
+    
+  
+
+  
+    <meta property="og:image" content="http://localhost:4000/images/bulma-banner.png">
+    <meta name="twitter:image" content="http://localhost:4000/images/bulma-banner.png">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="http://localhost:4000/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="http://localhost:4000/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="http://localhost:4000/favicons/favicon.ico?v=201701041855">
+  <meta name="msapplication-config" content="http://localhost:4000/favicons/browserconfig.xml?v=201701041855">
+  <meta name="theme-color" content="#00d1b2">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+  <body class="layout-documentation page-columns">
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost:4000">
+        <h3>My Style</h3>
+      </a>
+
+      <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navMenuDocumentation" class="navbar-menu">
+      <div class="navbar-start">
+        <a
+          class="navbar-item bd-navbar-item-documentation  is-active"
+          href="/documentation">
+        <span class="icon has-text-primary">
+          <i class="fas fa-book"></i>
+        </span>
+          <span class="is-hidden-touch is-hidden-widescreen">
+          Docs
+        </span>
+          <span class="is-hidden-desktop-only">
+          Documentation
+        </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<main class="bd-main">
+  <div class="bd-side-background"></div>
+  <div class="bd-main-container container">
+    <div class="bd-duo">
+      <div class="bd-lead">
+        <div class="bd-breadcrumb">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      
+        
+        <li>
+          <a href="http://localhost:4000">Home</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation">Documentation</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation/columns">Columns</a>
+        </li>
+      
+        
+        <li class="is-active">
+          <a href="http://localhost:4000/documentation/columns/nesting">Nesting</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+    <nav class="bd-prev-next">
+      
+        <a href="http://localhost:4000/documentation/columns/responsiveness" title="Responsiveness">
+          ←
+        </a>
+      
+
+      
+        <a href="http://localhost:4000/documentation/columns/gap" title="Gap">
+          →
+        </a>
+      
+    </nav>
+  
+</div>
+
+
+        <header class="bd-header">
+          <div class="bd-header-titles">
+            <h1 class="title">
+              Nesting columns
+            </h1>
+            <p class="subtitle is-4">
+              
+                A simple way to build <strong>responsive columns</strong>
+              
+            </p>
+            
+          </div>
+        </header>
+
+        
+          <nav class="bd-tabs">
+            <div class="tabs">
+              <ul>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/columns/basics">
+                      Basics
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/columns/sizes">
+                      Sizes
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/columns/responsiveness">
+                      Responsiveness
+                    </a>
+                  </li>
+                
+                  
+                  <li class="is-active">
+                    <a href="http://localhost:4000/documentation/columns/nesting">
+                      Nesting
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/columns/gap">
+                      Gap
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/columns/options">
+                      Options
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </nav>
+        
+
+        <div class="bd-content">
+          <div class="content">
+  <p>
+    You can <strong>nest</strong> columns to have more flexibility in your design. You only need to follow this structure:
+  </p>
+  <ul>
+    <li>
+      <code>columns</code>: top-level columns container
+      <ul>
+        <li>
+          <code>column</code>
+          <ul>
+            <li>
+              <code>columns</code>: nested columns
+              <ul>
+                <li>
+                  <code>column</code> and so on…
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p>
+    The difference with <a href="http://localhost:4000/documentation/columns/options/#multiline">multiline columns</a> is the <strong>order</strong> in the HTML code: all the <strong class="has-text-info">blue</strong> columns appear <em>before</em> the <strong class="has-text-danger">red</strong> ones. Resize to a narrower viewport to see the result.
+  </p>
+</div>
+
+
+
+
+<div class="columns">
+  <div class="column">
+    <p class="bd-notification is-info">First column</p>
+    <div class="columns is-mobile">
+      <div class="column">
+        <p class="bd-notification is-info">First nested column</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-info">Second nested column</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <p class="bd-notification is-danger">Second column</p>
+    <div class="columns is-mobile">
+      <div class="column is-half">
+        <p class="bd-notification is-danger">50%</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-danger">Auto</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-danger">Auto</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content">
+  <p>
+    Multiline columns will also have a <strong>gap</strong> between each <strong>line</strong>.
+  </p>
+</div>
+
+<div class="highlight-full">
+  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bd-notification is-info"</span><span class="nt">&gt;</span>First column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns is-mobile"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bd-notification is-info"</span><span class="nt">&gt;</span>First nested column<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bd-notification is-info"</span><span class="nt">&gt;</span>Second nested column<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bd-notification is-danger"</span><span class="nt">&gt;</span>Second column<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns is-mobile"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column is-half"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bd-notification is-danger"</span><span class="nt">&gt;</span>50%<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bd-notification is-danger"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bd-notification is-danger"</span><span class="nt">&gt;</span>Auto<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+
+        </div>
+
+        <nav class="bd-prev-next-bis">
+          
+            <a class="bd-prev-next-bis-previous" href="http://localhost:4000/documentation/columns/responsiveness" title="Responsiveness">
+              ← Responsiveness
+            </a>
+          
+
+          
+            <a class="bd-prev-next-bis-next" href="http://localhost:4000/documentation/columns/gap" title="Gap">
+              Gap →
+            </a>
+          
+        </nav>
+
+      </div>
+
+      <aside class="bd-side">
+        
+          <nav id="categories" class="bd-categories">
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/overview">
+          <strong>Overview</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/start">
+              Start
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/classes">
+              Classes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/modular">
+              Modularity
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/colors">
+              Colors
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/functions">
+              Functions
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/mixins">
+              Mixins
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/customize">
+          <strong>Customize</strong>
+          
+            <span class="tag is-success">
+              New!
+            </span>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/concepts">
+              Concepts
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/variables">
+              Variables
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-node-sass">
+              With node-sass
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-sass-cli">
+              With Sass CLI
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-webpack">
+              With webpack
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/modifiers">
+          <strong>Modifiers</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/syntax">
+              Syntax
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/helpers">
+              Helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/responsive-helpers">
+              Responsive helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/color-helpers">
+              Color helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/typography-helpers">
+              Typography helpers
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category is-active">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/columns">
+          <strong>Columns</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/basics">
+              Basics
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/sizes">
+              Sizes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li class="is-current">
+            <a href="http://localhost:4000/documentation/columns/nesting">
+              Nesting
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/gap">
+              Gap
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/options">
+              Options
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/layout">
+          <strong>Layout</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/container">
+              Container
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/level">
+              Level
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/media-object">
+              Media Object
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/hero">
+              Hero
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/section">
+              Section
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/footer">
+              Footer
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/tiles">
+              Tiles
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/form">
+          <strong>Form</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/general">
+              General
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/input">
+              Input
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/textarea">
+              Textarea
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/select">
+              Select
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/checkbox">
+              Checkbox
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/radio">
+              Radio
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/file">
+              File
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/elements">
+          <strong>Elements</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/box">
+              Box
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/button">
+              Button
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/content">
+              Content
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/delete">
+              Delete
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/icon">
+              Icon
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/image">
+              Image
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/notification">
+              Notification
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/progress">
+              Progress bars
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/table">
+              Table
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/tag">
+              Tag
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/title">
+              Title
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/components">
+          <strong>Components</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/breadcrumb">
+              Breadcrumb
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/card">
+              Card
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/dropdown">
+              Dropdown
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/menu">
+              Menu
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/message">
+              Message
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/modal">
+              Modal
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/navbar">
+              Navbar
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/pagination">
+              Pagination
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/panel">
+              Panel
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/tabs">
+              Tabs
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</nav>
+
+
+
+          <div id="anchorsReference" class="bd-anchors-reference"></div>
+<nav id="anchors" class="bd-anchors">
+  <p class="bd-anchors-title">
+    On this page
+  </p>
+
+  <ul class="bd-anchors-list"></ul>
+</nav>
+
+        
+      </aside>
+    </div>
+  </div>
+</main>
+
+  </body>
+</html>

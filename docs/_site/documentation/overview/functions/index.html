@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en" class="route-documentation">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Style is a CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.">
+
+  <title>Functions | My Style</title>
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/bulma-docs.min.css?v=201811171301">
+
+  <link rel="canonical" href="http://localhost:4000/documentation/overview/functions/">
+  <link rel="alternate" type="application/rss+xml" title="My Style" href="http://localhost:4000/atom.xml">
+
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:type" content="website">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+
+
+  <!-- Shared social media -->
+  
+    <meta property="og:title" content="Functions">
+    <meta name="twitter:title" content="Functions">
+  
+
+  
+    
+    
+      <meta property="og:description" content="An overview of what Bulma as a framework is all about">
+      <meta name="twitter:description" content="An overview of what Bulma as a framework is all about">
+    
+  
+
+  
+    <meta property="og:image" content="http://localhost:4000/images/bulma-banner.png">
+    <meta name="twitter:image" content="http://localhost:4000/images/bulma-banner.png">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="http://localhost:4000/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="http://localhost:4000/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="http://localhost:4000/favicons/favicon.ico?v=201701041855">
+  <meta name="msapplication-config" content="http://localhost:4000/favicons/browserconfig.xml?v=201701041855">
+  <meta name="theme-color" content="#00d1b2">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+  <body class="layout-documentation page-overview">
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost:4000">
+        <h3>My Style</h3>
+      </a>
+
+      <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navMenuDocumentation" class="navbar-menu">
+      <div class="navbar-start">
+        <a
+          class="navbar-item bd-navbar-item-documentation  is-active"
+          href="/documentation">
+        <span class="icon has-text-primary">
+          <i class="fas fa-book"></i>
+        </span>
+          <span class="is-hidden-touch is-hidden-widescreen">
+          Docs
+        </span>
+          <span class="is-hidden-desktop-only">
+          Documentation
+        </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<main class="bd-main">
+  <div class="bd-side-background"></div>
+  <div class="bd-main-container container">
+    <div class="bd-duo">
+      <div class="bd-lead">
+        <div class="bd-breadcrumb">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      
+        
+        <li>
+          <a href="http://localhost:4000">Home</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation">Documentation</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation/overview">Overview</a>
+        </li>
+      
+        
+        <li class="is-active">
+          <a href="http://localhost:4000/documentation/overview/functions">Functions</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+    <nav class="bd-prev-next">
+      
+        <a href="http://localhost:4000/documentation/overview/colors" title="Colors">
+          ←
+        </a>
+      
+
+      
+        <a href="http://localhost:4000/documentation/overview/mixins" title="Mixins">
+          →
+        </a>
+      
+    </nav>
+  
+</div>
+
+
+        <header class="bd-header">
+          <div class="bd-header-titles">
+            <h1 class="title">
+              Functions
+            </h1>
+            <p class="subtitle is-4">
+              
+                Utility functions to calculate colors and other values
+              
+            </p>
+            
+          </div>
+        </header>
+
+        
+          <nav class="bd-tabs">
+            <div class="tabs">
+              <ul>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/start">
+                      Start
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/classes">
+                      Classes
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/modular">
+                      Modularity
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/responsiveness">
+                      Responsiveness
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/colors">
+                      Colors
+                    </a>
+                  </li>
+                
+                  
+                  <li class="is-active">
+                    <a href="http://localhost:4000/documentation/overview/functions">
+                      Functions
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/overview/mixins">
+                      Mixins
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </nav>
+        
+
+        <div class="bd-content">
+          <div class="content">
+  <p>Bulma uses 3 custom functions to help define the values and colors dynamically:</p>
+  <ul>
+    <li><code>powerNumber($number, $exp)</code>: calculates the value of a number exposed to another one. Returns a number.</li>
+    <li><code>colorLuminance($color)</code>: defines if a color is dark or light. Return a decimal number between 0 and 1 where <= 0.5 is dark and > 0.5 is light.</li>
+    <li><code>findColorInvert($color)</code>: returns either 70% transparent black or 100% opaque white depending on the luminance of the color.</li>
+  </ul>
+</div>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="the-code-findcolorinvert-code-function" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    The <code>findColorInvert()</code> function
+  </span>
+  <a class="bd-anchor-link" href="#the-code-findcolorinvert-code-function">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>The <code>findColorInvert($color)</code> function takes a <strong>color</strong> as an input, and outputs either transparent <strong>black</strong> <code>rgba(#000, 0.7)</code> or <strong>white</strong> <code>#fff</code>:</p>
+  <ul>
+    <li>if <code>colorLuminance($color) > 0.55</code>, it outputs <code>rgba(#000, 0.7)</code></li>
+    <li>otherwise, it outputs <code>#fff</code></li>
+  </ul>
+  <p>Its purpose is to guarantee a <strong>readable</strong> shade for the <em>text</em> when the input color is used as the <em>background</em>.</p>
+  <div class="table-container">
+    <table class="table is-bordered">
+      <thead>
+        <tr>
+          <th>color</th>
+          <th>color luminance</th>
+          <th>findColorInvert()</th>
+          <th>result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="bd-color" style="background: #00d1b2;"></span>
+            <code>#00d1b2</code>
+          </td>
+          <td>
+            <code>0.52831</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: #fff;"></span>
+            <code>#fff</code>
+          </td>
+          <td>
+            <a class="button" style="background: #00d1b2; border-color: #00d1b2; color: #fff;">
+              Button
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="bd-color" style="background: #3273dc;"></span>
+            <code>#3273dc</code>
+          </td>
+          <td>
+            <code>0.23119</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: #fff;"></span>
+            <code>#fff</code>
+          </td>
+          <td>
+            <a class="button" style="background: #3273dc; border-color: #3273dc; color: #fff;">
+              Button
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="bd-color" style="background: #23d160;"></span>
+            <code>#23d160</code>
+          </td>
+          <td>
+            <code>0.51067</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: #fff;"></span>
+            <code>#fff</code>
+          </td>
+          <td>
+            <a class="button" style="background: #23d160; border-color: #23d160; color: #fff;">
+              Button
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="bd-color" style="background: #ffdd57;"></span>
+            <code>#ffdd57</code>
+          </td>
+          <td>
+            <code>0.76863</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: rgba(0, 0, 0, 0.7);"></span>
+            <code>rgba(0, 0, 0, 0.7)</code>
+          </td>
+          <td>
+            <a class="button" style="background: #ffdd57; border-color: #ffdd57; color: rgba(0, 0, 0, 0.7);">
+              Button
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="bd-color" style="background: #ff3860;"></span>
+            <code>#ff3860</code>
+          </td>
+          <td>
+            <code>0.27313</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: #fff;"></span>
+            <code>#fff</code>
+          </td>
+          <td>
+            <a class="button" style="background: #ff3860; border-color: #ff3860; color: #fff;">
+              Button
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="bd-color" style="background: #ffb3b3;"></span>
+            <code>#ffb3b3</code>
+          </td>
+          <td>
+            <code>0.61796</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: rgba(0,0,0,0.7);"></span>
+            <code>rgba(0,0,0,0.7)</code>
+          </td>
+          <td>
+            <a class="button" style="background: #ffb3b3; border-color: #ffb3b3; color: rgba(0,0,0,0.7);">
+              Button
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="bd-color" style="background: #ffbc6b;"></span>
+            <code>#ffbc6b</code>
+          </td>
+          <td>
+            <code>0.63053</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: rgba(0,0,0,0.7);"></span>
+            <code>rgba(0,0,0,0.7)</code>
+          </td>
+          <td>
+            <a class="button" style="background: #ffbc6b; border-color: #ffbc6b; color: rgba(0,0,0,0.7);">
+              Button
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="bd-color" style="background: hsl(294, 71%, 79%);"></span>
+            <code>hsl(294, 71%, 79%)</code>
+          </td>
+          <td>
+            <code>0.5529</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: rgba(0,0,0,0.7);"></span>
+            <code>rgba(0,0,0,0.7)</code>
+          </td>
+          <td>
+            <a class="button" style="background: hsl(294, 71%, 79%); border-color: hsl(294, 71%, 79%); color: rgba(0,0,0,0.7);">
+              Button
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    For colors that have a luminance close to the <code>0.55</code> threshold, it can be useful to <strong>override</strong> the <code>findColorInvert()</code> function, and rather set the invert color <strong>manually.</strong>
+    <br>
+    For example, this shade of <span class="bd-color" style="background: hsl(294, 71%, 79%); float: none; height: 16px; width: 16px; margin-right: 0; vertical-align: middle;"></span> purple has a color luminance of <code>0.5529</code>. It can be preferable to set a color invert of white instead of transparent black:
+  </p>
+  <div class="table-container">
+    <table class="table is-bordered">
+      <tbody>
+        <tr>
+          <th>
+            with <code>findColorInvert()</code>
+          </th>
+          <td>
+            <code>$purple-invert: findColorInvert($purple)</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: rgba(0,0,0,0.7);"></span>
+            <code>rgba(0,0,0,0.7)</code>
+          </td>
+          <td>
+            <a class="button" style="background: hsl(294, 71%, 79%); border-color: hsl(294, 71%, 79%); color: rgba(0,0,0,0.7);">
+              Button
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            with manual setting
+          </th>
+          <td>
+            <code>$purple-invert: #fff</code>
+          </td>
+          <td>
+            <span class="bd-color" style="background: #fff;"></span>
+            <code>#fff</code>
+          </td>
+          <td>
+            <a class="button" style="background: hsl(294, 71%, 79%); border-color: hsl(294, 71%, 79%); color: #fff;">
+              Button
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        </div>
+
+        <nav class="bd-prev-next-bis">
+          
+            <a class="bd-prev-next-bis-previous" href="http://localhost:4000/documentation/overview/colors" title="Colors">
+              ← Colors
+            </a>
+          
+
+          
+            <a class="bd-prev-next-bis-next" href="http://localhost:4000/documentation/overview/mixins" title="Mixins">
+              Mixins →
+            </a>
+          
+        </nav>
+
+      </div>
+
+      <aside class="bd-side">
+        
+          <nav id="categories" class="bd-categories">
+  
+    
+    
+    
+
+    <div class="bd-category is-active">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/overview">
+          <strong>Overview</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/start">
+              Start
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/classes">
+              Classes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/modular">
+              Modularity
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/colors">
+              Colors
+            </a>
+          </li>
+        
+          
+          <li class="is-current">
+            <a href="http://localhost:4000/documentation/overview/functions">
+              Functions
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/mixins">
+              Mixins
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/customize">
+          <strong>Customize</strong>
+          
+            <span class="tag is-success">
+              New!
+            </span>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/concepts">
+              Concepts
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/variables">
+              Variables
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-node-sass">
+              With node-sass
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-sass-cli">
+              With Sass CLI
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-webpack">
+              With webpack
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/modifiers">
+          <strong>Modifiers</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/syntax">
+              Syntax
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/helpers">
+              Helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/responsive-helpers">
+              Responsive helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/color-helpers">
+              Color helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/typography-helpers">
+              Typography helpers
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/columns">
+          <strong>Columns</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/basics">
+              Basics
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/sizes">
+              Sizes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/nesting">
+              Nesting
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/gap">
+              Gap
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/options">
+              Options
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/layout">
+          <strong>Layout</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/container">
+              Container
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/level">
+              Level
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/media-object">
+              Media Object
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/hero">
+              Hero
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/section">
+              Section
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/footer">
+              Footer
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/tiles">
+              Tiles
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/form">
+          <strong>Form</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/general">
+              General
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/input">
+              Input
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/textarea">
+              Textarea
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/select">
+              Select
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/checkbox">
+              Checkbox
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/radio">
+              Radio
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/file">
+              File
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/elements">
+          <strong>Elements</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/box">
+              Box
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/button">
+              Button
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/content">
+              Content
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/delete">
+              Delete
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/icon">
+              Icon
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/image">
+              Image
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/notification">
+              Notification
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/progress">
+              Progress bars
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/table">
+              Table
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/tag">
+              Tag
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/title">
+              Title
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/components">
+          <strong>Components</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/breadcrumb">
+              Breadcrumb
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/card">
+              Card
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/dropdown">
+              Dropdown
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/menu">
+              Menu
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/message">
+              Message
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/modal">
+              Modal
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/navbar">
+              Navbar
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/pagination">
+              Pagination
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/panel">
+              Panel
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/tabs">
+              Tabs
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</nav>
+
+
+
+          <div id="anchorsReference" class="bd-anchors-reference"></div>
+<nav id="anchors" class="bd-anchors">
+  <p class="bd-anchors-title">
+    On this page
+  </p>
+
+  <ul class="bd-anchors-list"></ul>
+</nav>
+
+        
+      </aside>
+    </div>
+  </div>
+</main>
+
+  </body>
+</html>

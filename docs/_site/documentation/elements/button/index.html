@@ -1,0 +1,3428 @@
+<!DOCTYPE html>
+<html lang="en" class="route-documentation">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Style is a CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.">
+
+  <title>Button | My Style</title>
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/css/bulma-docs.min.css?v=201811171301">
+
+  <link rel="canonical" href="http://localhost:4000/documentation/elements/button/">
+  <link rel="alternate" type="application/rss+xml" title="My Style" href="http://localhost:4000/atom.xml">
+
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:type" content="website">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+
+
+  <!-- Shared social media -->
+  
+    <meta property="og:title" content="Button">
+    <meta name="twitter:title" content="Button">
+  
+
+  
+    
+    
+      <meta property="og:description" content="Essential interface elements that only require a single CSS class">
+      <meta name="twitter:description" content="Essential interface elements that only require a single CSS class">
+    
+  
+
+  
+    <meta property="og:image" content="http://localhost:4000/images/bulma-banner.png">
+    <meta name="twitter:image" content="http://localhost:4000/images/bulma-banner.png">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="http://localhost:4000/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="http://localhost:4000/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="http://localhost:4000/favicons/favicon.ico?v=201701041855">
+  <meta name="msapplication-config" content="http://localhost:4000/favicons/browserconfig.xml?v=201701041855">
+  <meta name="theme-color" content="#00d1b2">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+  <body class="layout-documentation page-elements">
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost:4000">
+        <h3>My Style</h3>
+      </a>
+
+      <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navMenuDocumentation" class="navbar-menu">
+      <div class="navbar-start">
+        <a
+          class="navbar-item bd-navbar-item-documentation  is-active"
+          href="/documentation">
+        <span class="icon has-text-primary">
+          <i class="fas fa-book"></i>
+        </span>
+          <span class="is-hidden-touch is-hidden-widescreen">
+          Docs
+        </span>
+          <span class="is-hidden-desktop-only">
+          Documentation
+        </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<main class="bd-main">
+  <div class="bd-side-background"></div>
+  <div class="bd-main-container container">
+    <div class="bd-duo">
+      <div class="bd-lead">
+        <div class="bd-breadcrumb">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      
+        
+        <li>
+          <a href="http://localhost:4000">Home</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation">Documentation</a>
+        </li>
+      
+        
+        <li>
+          <a href="http://localhost:4000/documentation/elements">Elements</a>
+        </li>
+      
+        
+        <li class="is-active">
+          <a href="http://localhost:4000/documentation/elements/button">Button</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+    <nav class="bd-prev-next">
+      
+        <a href="http://localhost:4000/documentation/elements/box" title="Box">
+          ←
+        </a>
+      
+
+      
+        <a href="http://localhost:4000/documentation/elements/content" title="Content">
+          →
+        </a>
+      
+    </nav>
+  
+</div>
+
+
+        <header class="bd-header">
+          <div class="bd-header-titles">
+            <h1 class="title">
+              Button
+            </h1>
+            <p class="subtitle is-4">
+              
+                The classic <strong>button</strong>, in different colors, sizes, and states
+              
+            </p>
+            
+              <div id="meta" class="field is-grouped is-grouped-multiline">
+
+  
+
+  
+
+  
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Colors</span>
+      
+        <a class="tag is-success" href="#colors">Yes</a>
+      
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Sizes</span>
+      
+        <a class="tag is-success" href="#sizes">Yes</a>
+      
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags has-addons">
+      <span class="tag">Variables</span>
+      
+        <a class="tag is-success" href="#variables">Yes</a>
+      
+    </div>
+  </div>
+</div>
+
+            
+          </div>
+        </header>
+
+        
+          <nav class="bd-tabs">
+            <div class="tabs">
+              <ul>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/box">
+                      Box
+                    </a>
+                  </li>
+                
+                  
+                  <li class="is-active">
+                    <a href="http://localhost:4000/documentation/elements/button">
+                      Button
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/content">
+                      Content
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/delete">
+                      Delete
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/icon">
+                      Icon
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/image">
+                      Image
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/notification">
+                      Notification
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/progress">
+                      Progress bars
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/table">
+                      Table
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/tag">
+                      Tag
+                    </a>
+                  </li>
+                
+                  
+                  <li >
+                    <a href="http://localhost:4000/documentation/elements/title">
+                      Title
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </nav>
+        
+
+        <div class="bd-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content">
+  <p>
+    The <strong>button</strong> is an essential element of any design. It's meant to look and behave as an <strong>interactive</strong> element of your page.
+  </p>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button">Button</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<div class="content">
+  <p>
+    The <code>.button</code> class can be used on:
+  </p>
+  <ul>
+    <li>
+      <code>&lt;a&gt;</code> anchor links
+    </li>
+    <li>
+      <code>&lt;button&gt;</code> form buttons
+    </li>
+    <li>
+      <code>&lt;input type="submit"&gt;</code> submit inputs
+    </li>
+    <li>
+      <code>&lt;input type="reset"&gt;</code> reset inputs
+    </li>
+  </ul>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button">Anchor</a>
+<button class="button">Button</button>
+<input class="button" type="submit" value="Submit input">
+<input class="button" type="reset" value="Reset input">
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Anchor<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset input"</span><span class="nt">&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="colors" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Colors
+  </span>
+  <a class="bd-anchor-link" href="#colors">
+    #
+  </a>
+</h3>
+
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button is-white">White</a>
+<a class="button is-light">Light</a>
+<a class="button is-dark">Dark</a>
+<a class="button is-black">Black</a>
+<a class="button is-text">Text</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-white"</span><span class="nt">&gt;</span>White<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-black"</span><span class="nt">&gt;</span>Black<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-text"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button is-primary">Primary</a>
+<a class="button is-link">Link</a>
+<a class="button is-info">Info</a>
+<a class="button is-success">Success</a>
+<a class="button is-warning">Warning</a>
+<a class="button is-danger">Danger</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="sizes" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Sizes
+  </span>
+  <a class="bd-anchor-link" href="#sizes">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>
+    The button comes in <strong>4 different sizes:</strong>
+  </p>
+  <ul>
+    <li>
+      small
+    </li>
+    <li>
+      normal
+    </li>
+    <li>
+      medium
+    </li>
+    <li>
+      large
+    </li>
+  </ul>
+  <p>
+    While the default size is the <strong>normal</strong> one, the <code>is-normal</code> modifier exists in case you need to reset the button to its normal size.
+  </p>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button is-small">Small</a>
+<a class="button">Default</a>
+<a class="button is-normal">Normal</a>
+<a class="button is-medium">Medium</a>
+<a class="button is-large">Large</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-small"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-normal"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-large"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="tags has-addons">
+  
+    <span class="tag is-warning">Coming soon!</span>
+    <span class="tag is-danger">0.7.3</span>
+  
+</div>
+
+<div class="content">
+  <p>
+    You can change the size of <strong>multiple buttons</strong> at once by wrapping them in a <code>.buttons</code> parent, and applying one of 3 modifiers:
+  </p>
+  <ul>
+    <li>
+      <code>buttons are-small</code>
+    </li>
+    <li>
+      <code>buttons are-medium</code>
+    </li>
+    <li>
+      <code>buttons are-large</code>
+    </li>
+  </ul>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="buttons are-medium">
+  <a class="button">All</a>
+  <a class="button">Medium</a>
+  <a class="button">Size</a>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons are-medium"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>All<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Size<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<div class="content">
+  <p>
+    You can change the size of only a <strong>subset of buttons</strong> by simply applying a modifier class to them.
+    <br>
+    For example, if you want all buttons to be <strong>small</strong> but still have one in its <strong>normal</strong> size, simply do the following:
+  </p>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="buttons are-small">
+  <a class="button">Small</a>
+  <a class="button">Small</a>
+  <a class="button">Small</a>
+  <a class="button is-normal">Normal</a>
+  <a class="button">Small</a>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons are-small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-normal"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="displays" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Displays
+  </span>
+  <a class="bd-anchor-link" href="#displays">
+    #
+  </a>
+</h3>
+
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button is-small is-fullwidth">Small</a>
+<a class="button is-fullwidth">Normal</a>
+<a class="button is-medium is-fullwidth">Medium</a>
+<a class="button is-large is-fullwidth">Large</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-small is-fullwidth"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-fullwidth"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium is-fullwidth"</span><span class="nt">&gt;</span>Medium<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-large is-fullwidth"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="styles" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Styles
+  </span>
+  <a class="bd-anchor-link" href="#styles">
+    #
+  </a>
+</h3>
+
+
+<h4 class="subtitle">Outlined</h4>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button is-outlined">Outlined</a>
+<a class="button is-primary is-outlined">Outlined</a>
+<a class="button is-link is-outlined">Outlined</a>
+<a class="button is-info is-outlined">Outlined</a>
+<a class="button is-success is-outlined">Outlined</a>
+<a class="button is-danger is-outlined">Outlined</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-outlined"</span><span class="nt">&gt;</span>Outlined<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<h4 class="subtitle">Inverted (the text color becomes the background color, and vice-versa)</h4>
+
+<div class="columns">
+  <div class="column">
+    <div class="bd-callout is-primary">
+      <div class="buttons">
+        
+<a class="button is-primary is-inverted">Inverted</a>
+<a class="button is-link is-inverted">Inverted</a>
+<a class="button is-info is-inverted">Inverted</a>
+<a class="button is-success is-inverted">Inverted</a>
+<a class="button is-danger is-inverted">Inverted</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-inverted"</span><span class="nt">&gt;</span>Inverted<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<h4 class="subtitle">Invert Outlined (the invert color becomes the text and border colors)</h4>
+
+<div class="columns">
+  <div class="column">
+    <div class="bd-callout is-primary">
+      <div class="buttons">
+        
+<a class="button is-primary is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-link is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-info is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-success is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-danger is-inverted is-outlined">Invert Outlined</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-inverted is-outlined"</span><span class="nt">&gt;</span>Invert Outlined<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<h4 class="subtitle">Rounded buttons</h4>
+
+<div class="columns">
+  <div class="column">
+    
+
+
+<div class="tags has-addons">
+  
+    <span class="tag">Since</span>
+    <span class="tag is-info">0.6.2</span>
+  
+</div>
+    <div class="buttons">
+      
+<a class="button is-rounded">Rounded</a>
+<a class="button is-primary is-rounded">Rounded</a>
+<a class="button is-link is-rounded">Rounded</a>
+<a class="button is-info is-rounded">Rounded</a>
+<a class="button is-success is-rounded">Rounded</a>
+<a class="button is-danger is-rounded">Rounded</a>
+
+    </div>
+  </div>
+  <div class="column">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="states" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    States
+  </span>
+  <a class="bd-anchor-link" href="#states">
+    #
+  </a>
+</h3>
+
+
+<h4 class="subtitle">Normal</h4>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button">Normal</a>
+<a class="button is-primary">Normal</a>
+<a class="button is-link">Normal</a>
+<a class="button is-info">Normal</a>
+<a class="button is-success">Normal</a>
+<a class="button is-warning">Normal</a>
+<a class="button is-danger">Normal</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-warning"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<h4 class="subtitle">Hover</h4>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button is-hovered">Hover</a>
+<a class="button is-primary is-hovered">Hover</a>
+<a class="button is-link is-hovered">Hover</a>
+<a class="button is-info is-hovered">Hover</a>
+<a class="button is-success is-hovered">Hover</a>
+<a class="button is-warning is-hovered">Hover</a>
+<a class="button is-danger is-hovered">Hover</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-hovered"</span><span class="nt">&gt;</span>Hover<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-hovered"</span><span class="nt">&gt;</span>Hover<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-hovered"</span><span class="nt">&gt;</span>Hover<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-hovered"</span><span class="nt">&gt;</span>Hover<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-hovered"</span><span class="nt">&gt;</span>Hover<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-warning is-hovered"</span><span class="nt">&gt;</span>Hover<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-hovered"</span><span class="nt">&gt;</span>Hover<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<h4 class="subtitle">Focus</h4>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button is-focused">Focus</a>
+<a class="button is-primary is-focused">Focus</a>
+<a class="button is-link is-focused">Focus</a>
+<a class="button is-info is-focused">Focus</a>
+<a class="button is-success is-focused">Focus</a>
+<a class="button is-warning is-focused">Focus</a>
+<a class="button is-danger is-focused">Focus</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-focused"</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-focused"</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-focused"</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-focused"</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-focused"</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-warning is-focused"</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-focused"</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<h4 class="subtitle">Active</h4>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        <div class="buttons">
+          
+<a class="button is-active">Active</a>
+<a class="button is-primary is-active">Active</a>
+<a class="button is-link is-active">Active</a>
+<a class="button is-info is-active">Active</a>
+<a class="button is-success is-active">Active</a>
+<a class="button is-warning is-active">Active</a>
+<a class="button is-danger is-active">Active</a>
+
+        </div>
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-active"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-active"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-active"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-active"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-active"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-warning is-active"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-active"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<h4 class="subtitle">Loading</h4>
+
+<div class="columns">
+  <div class="column">
+    <div class="buttons">
+      
+<a class="button is-loading">Loading</a>
+<a class="button is-primary is-loading">Loading</a>
+<a class="button is-link is-loading">Loading</a>
+<a class="button is-info is-loading">Loading</a>
+<a class="button is-success is-loading">Loading</a>
+<a class="button is-warning is-loading">Loading</a>
+<a class="button is-danger is-loading">Loading</a>
+
+    </div>
+    <div class="message is-info">
+      <div class="message-body">
+        <p>
+          Since the loading spinner is implemented using the <code>:after</code> pseudo-element, it is not supported by the <code>&lt;input type="submit"&gt;</code> element.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary is-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link is-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info is-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success is-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-warning is-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<h4 id="static-button" class="subtitle">
+  Static
+</h4>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        You can create a <strong>non-interactive button</strong> by using the <code>is-static</code> modifier. This is useful to align a text label with an input, for example when using <a href="http://localhost:4000/documentation/form/general#form-addons">form addons</a>.
+      </p>
+    </div>
+    
+<span class="button is-static">Static</span>
+
+  </div>
+  <div class="column">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button is-static"</span><span class="nt">&gt;</span>Static<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<h4 class="subtitle">Disabled</h4>
+
+<div class="columns">
+  <div class="column">
+    <div class="buttons">
+      
+<a class="button" title="Disabled button" disabled>Disabled</a>
+<a class="button is-primary" title="Disabled button" disabled>Disabled</a>
+<a class="button is-link" title="Disabled button" disabled>Disabled</a>
+<a class="button is-info" title="Disabled button" disabled>Disabled</a>
+<a class="button is-success" title="Disabled button" disabled>Disabled</a>
+<a class="button is-warning" title="Disabled button" disabled>Disabled</a>
+<a class="button is-danger" title="Disabled button" disabled>Disabled</a>
+
+    </div>
+    <div class="message is-danger">
+      <div class="message-body">
+        <p>The <code>is-disabled</code> CSS class has been deprecated in favor of the <code>disabled</code> HTML attribute. <a href="https://github.com/jgthms/bulma/issues/276">Learn more</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">title=</span><span class="s">"Disabled button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span> <span class="na">title=</span><span class="s">"Disabled button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link"</span> <span class="na">title=</span><span class="s">"Disabled button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-info"</span> <span class="na">title=</span><span class="s">"Disabled button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success"</span> <span class="na">title=</span><span class="s">"Disabled button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-warning"</span> <span class="na">title=</span><span class="s">"Disabled button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger"</span> <span class="na">title=</span><span class="s">"Disabled button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<h4 class="subtitle">With Font Awesome icons</h4>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    bd-is-clipped
+    bd-is-2
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<p class="buttons">
+  <a class="button">
+    <span class="icon is-small">
+      <i class="fas fa-bold"></i>
+    </span>
+  </a>
+  <a class="button">
+    <span class="icon is-small">
+      <i class="fas fa-italic"></i>
+    </span>
+  </a>
+  <a class="button">
+    <span class="icon is-small">
+      <i class="fas fa-underline"></i>
+    </span>
+  </a>
+</p>
+<p class="buttons">
+  <a class="button">
+    <span class="icon">
+      <i class="fab fa-github"></i>
+    </span>
+    <span>GitHub</span>
+  </a>
+  <a class="button is-primary">
+    <span class="icon">
+      <i class="fab fa-twitter"></i>
+    </span>
+    <span>Twitter</span>
+  </a>
+  <a class="button is-success">
+    <span class="icon is-small">
+      <i class="fas fa-check"></i>
+    </span>
+    <span>Save</span>
+  </a>
+  <a class="button is-danger is-outlined">
+    <span>Delete</span>
+    <span class="icon is-small">
+      <i class="fas fa-times"></i>
+    </span>
+  </a>
+</p>
+<p class="buttons">
+  <a class="button is-small">
+    <span class="icon is-small">
+      <i class="fab fa-github"></i>
+    </span>
+    <span>GitHub</span>
+  </a>
+  <a class="button">
+    <span class="icon">
+      <i class="fab fa-github"></i>
+    </span>
+    <span>GitHub</span>
+  </a>
+  <a class="button is-medium">
+    <span class="icon">
+      <i class="fab fa-github"></i>
+    </span>
+    <span>GitHub</span>
+  </a>
+  <a class="button is-large">
+    <span class="icon is-medium">
+      <i class="fab fa-github"></i>
+    </span>
+    <span>GitHub</span>
+  </a>
+</p>
+
+      
+    </div>
+    <div class="bd-snippet-code  ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-bold"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-italic"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-underline"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>GitHub<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-twitter"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Twitter<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-check"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Save<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger is-outlined"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Delete<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-times"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-small"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>GitHub<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>GitHub<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>GitHub<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-medium"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>GitHub<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        If the button only contains an icon, Bulma will make sure the button remains <strong>square</strong>, no matter the size of the button <em>or</em> of the icon.
+      </p>
+    </div>
+    
+<p class="buttons">
+  <a class="button is-small">
+    <span class="icon is-small">
+      <i class="fas fa-heading"></i>
+    </span>
+  </a>
+</p>
+<p class="buttons">
+  <a class="button">
+    <span class="icon is-small">
+      <i class="fas fa-heading"></i>
+    </span>
+  </a>
+  <a class="button">
+  <span class="icon">
+    <i class="fas fa-heading fa-lg"></i>
+  </span>
+  </a>
+</p>
+<p class="buttons">
+  <a class="button is-medium">
+    <span class="icon is-small">
+      <i class="fas fa-heading"></i>
+    </span>
+  </a>
+  <a class="button is-medium">
+  <span class="icon">
+    <i class="fas fa-heading fa-lg"></i>
+  </span>
+  </a>
+  <a class="button is-medium">
+    <span class="icon is-medium">
+      <i class="fas fa-heading fa-2x"></i>
+    </span>
+  </a>
+</p>
+<p class="buttons">
+  <a class="button is-large">
+    <span class="icon is-small">
+      <i class="fas fa-heading"></i>
+    </span>
+  </a>
+  <a class="button is-large">
+  <span class="icon">
+    <i class="fas fa-heading fa-lg"></i>
+  </span>
+  </a>
+  <a class="button is-large">
+    <span class="icon is-medium">
+      <i class="fas fa-heading fa-2x"></i>
+    </span>
+  </a>
+</p>
+
+  </div>
+  <div class="column">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-small"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-medium"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-medium"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading fa-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-large"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-medium"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heading fa-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="button-group" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Button group
+  </span>
+  <a class="bd-anchor-link" href="#button-group">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>If you want to <strong>group</strong> buttons together on a <strong>single line</strong>, use the <code>is-grouped</code> modifier on the <code>field</code> container:</p>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field is-grouped">
+  <p class="control">
+    <a class="button is-link">
+      Save changes
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      Cancel
+    </a>
+  </p>
+  <p class="control">
+    <a class="button is-danger">
+      Delete post
+    </a>
+  </p>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field is-grouped"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-link"</span><span class="nt">&gt;</span>
+      Save changes
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      Cancel
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button is-danger"</span><span class="nt">&gt;</span>
+      Delete post
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="button-addons" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Button addons
+  </span>
+  <a class="bd-anchor-link" href="#button-addons">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>If you want to use buttons as <strong>addons</strong>, use the <code>has-addons</code> modifier on the <code>field</code> container:</p>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field has-addons">
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-align-left"></i>
+      </span>
+      <span>Left</span>
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-align-center"></i>
+      </span>
+      <span>Center</span>
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-align-right"></i>
+      </span>
+      <span>Right</span>
+    </a>
+  </p>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-align-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Left<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-align-center"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Center<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-align-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Right<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="button-group-with-addons" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Button group with addons
+  </span>
+  <a class="bd-anchor-link" href="#button-group-with-addons">
+    #
+  </a>
+</h3>
+
+
+<div class="content">
+  <p>You can group together addons as well:</p>
+</div>
+
+
+  <div class="
+    bd-snippet
+    bd-is-vertical
+    
+    bd-is-1
+    
+    
+    ">
+    <div class="bd-snippet-preview ">
+      
+        
+<div class="field has-addons">
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-bold"></i>
+      </span>
+      <span>Bold</span>
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-italic"></i>
+      </span>
+      <span>Italic</span>
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-underline"></i>
+      </span>
+      <span>Underline</span>
+    </a>
+  </p>
+</div>
+
+<div class="field has-addons">
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-align-left"></i>
+      </span>
+      <span>Left</span>
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-align-center"></i>
+      </span>
+      <span>Center</span>
+    </a>
+  </p>
+  <p class="control">
+    <a class="button">
+      <span class="icon is-small">
+        <i class="fas fa-align-right"></i>
+      </span>
+      <span>Right</span>
+    </a>
+  </p>
+</div>
+
+      
+    </div>
+    <div class="bd-snippet-code highlight-full ">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-bold"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Bold<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-italic"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Italic<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-underline"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Underline<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-align-left"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Left<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-align-center"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Center<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"control"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon is-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-align-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Right<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+    </div>
+  </div>
+
+
+
+<hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="list-of-buttons" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    List of buttons
+  </span>
+  <a class="bd-anchor-link" href="#list-of-buttons">
+    #
+  </a>
+</h3>
+
+
+
+
+
+<div class="tags has-addons">
+  
+    <span class="tag">Since</span>
+    <span class="tag is-info">0.6.1</span>
+  
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        You can now create a <strong>list of buttons</strong> with the <code>.buttons</code> container.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="buttons">
+  <span class="button is-success">Save changes</span>
+  <span class="button is-info">Save and continue</span>
+  <span class="button is-danger">Cancel</span>
+</div>
+
+    </div>
+  </div>
+  <div class="column">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button is-success"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button is-info"</span><span class="nt">&gt;</span>Save and continue<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button is-danger"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        If the list is <strong>very long</strong>, it will automatically wrap on <strong>multiple lines</strong>, while keeping all buttons <strong>evenly spaced</strong>.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="buttons">
+  <span class="button">One</span>
+  <span class="button">Two</span>
+  <span class="button">Three</span>
+  <span class="button">Four</span>
+  <span class="button">Five</span>
+  <span class="button">Six</span>
+  <span class="button">Seven</span>
+  <span class="button">Eight</span>
+  <span class="button">Nine</span>
+  <span class="button">Ten</span>
+  <span class="button">Eleven</span>
+  <span class="button">Twelve</span>
+  <span class="button">Thirteen</span>
+  <span class="button">Fourteen</span>
+  <span class="button">Fifteen</span>
+  <span class="button">Sixteen</span>
+  <span class="button">Seventeen</span>
+  <span class="button">Eighteen</span>
+  <span class="button">Nineteen</span>
+  <span class="button">Twenty</span>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Five<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Six<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Seven<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Eight<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Nine<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Ten<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Eleven<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Twelve<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Thirteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Fourteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Fifteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Sixteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Seventeen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Eighteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Nineteen<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Twenty<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        You can <strong>attach buttons together</strong> with the <code>.has-addons</code> modifier.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="buttons has-addons">
+  <span class="button">Yes</span>
+  <span class="button">Maybe</span>
+  <span class="button">No</span>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Maybe<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        Use the <code>is-centered</code> or the <code>is-right</code> modifiers to alter the <strong>alignment</strong>.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="buttons has-addons is-centered">
+  <span class="button">Yes</span>
+  <span class="button">Maybe</span>
+  <span class="button">No</span>
+</div>
+
+      
+<div class="buttons has-addons is-right">
+  <span class="button">Yes</span>
+  <span class="button">Maybe</span>
+  <span class="button">No</span>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons has-addons is-centered"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Maybe<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons has-addons is-right"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Maybe<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        You can use any <strong>modifier</strong> class on each button to differentiate them. Make sure to add the <code>is-selected</code> modifier as well to make sure the selected button is <em>above</em> its siblings.
+      </p>
+    </div>
+    <div class="bd-example">
+      
+<div class="buttons has-addons">
+  <span class="button is-success is-selected">Yes</span>
+  <span class="button">Maybe</span>
+  <span class="button">No</span>
+</div>
+
+<div class="buttons has-addons">
+  <span class="button">Yes</span>
+  <span class="button is-info is-selected">Maybe</span>
+  <span class="button">No</span>
+</div>
+
+<div class="buttons has-addons">
+  <span class="button">Yes</span>
+  <span class="button">Maybe</span>
+  <span class="button is-danger is-selected">No</span>
+</div>
+
+    </div>
+  </div>
+  <div class="column highlight-full">
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button is-success is-selected"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Maybe<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button is-info is-selected"</span><span class="nt">&gt;</span>Maybe<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"buttons has-addons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>Maybe<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button is-danger is-selected"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  </div>
+</div>
+
+<div class="message is-info">
+  <div class="message-header">
+    <p>Difference between <a href="http://localhost:4000/documentation/form/general/#form-group">form groups</a> and <strong>list of buttons</strong></p>
+  </div>
+  <div class="message-body">
+    <div class="content">
+      <p>
+        While this list of buttons style can be achieved with either <code>field is-grouped</code> or the new <code>buttons</code> class, there are a few differences:
+      </p>
+      <ul>
+        <li>
+          <code>buttons</code> has a <strong>simpler markup</strong>
+        </li>
+        <li>
+          <code>buttons</code> can only contain <code>button</code> elements
+        </li>
+        <li>
+          <code>field is-grouped</code> can contain <em>any</em> type of <code>control</code> inputs
+        </li>
+        <li>
+          <code>field is-grouped</code> can be forced to fit all controls on a <strong>single line</strong>
+        </li>
+        <li>
+          with <code>field is-grouped</code> you can <strong>expand</strong> one of the controls
+        </li>
+      </ul>
+      <p>
+        Basically, if you only want a list of <em>buttons</em>, using <code>buttons</code> is recommended. If you need more control on the styling and the elements, use a <a href="http://localhost:4000/documentation/form/general/#form-group">form group</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+    <hr class="hr" style="margin-bottom: 0;">
+
+<h3 id="variables" class="title is-4 is-spaced bd-anchor-title">
+  <span class="bd-anchor-name">
+    Variables
+  </span>
+  <a class="bd-anchor-link" href="#variables">
+    #
+  </a>
+</h3>
+
+  
+
+  
+    <div class="content">
+      <p>You can use <a href="https://github.com/jgthms/bulma/blob/master/sass/elements/button.sass" target="_blank" rel="nofollow">
+          these variables
+        </a> to <strong>customize</strong> this element. Simply set one or multiple of these variables <em>before</em> importing Bulma. <a href="http://localhost:4000/documentation/overview/customize/">Learn how</a>.</p>
+    </div>
+  
+
+  <div class="table-container">
+    <table class="table is-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Computed value</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-darker</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-background-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$white</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 100%);"></span>
+<code>hsl(0, 0%, 100%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-border-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-lighter</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 86%);"></span>
+<code>hsl(0, 0%, 86%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-border-width</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        variable
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$control-border-width</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-padding-vertical</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>calc(0.375em - #{$button-border-width})</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-padding-horizontal</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>0.75em</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-hover-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$link-hover</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-hover-border-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$link-hover-border</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 71%);"></span>
+<code>hsl(0, 0%, 71%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-focus-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$link-focus</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-focus-border-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$link-focus-border</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(217, 71%,  53%);"></span>
+<code>hsl(217, 71%,  53%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-focus-box-shadow-size</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        size
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>0 0 0 0.125em</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-focus-box-shadow-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <span class="bd-color" style="background: rgba($link, 0.25);"></span>
+<code>rgba($link, 0.25)</code>
+
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-active-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$link-active</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-active-border-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$link-active-border</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+<code>hsl(0, 0%, 29%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-text-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$text</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+<code>hsl(0, 0%, 29%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-text-hover-background-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$background</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-text-hover-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$text-strong</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 21%);"></span>
+<code>hsl(0, 0%, 21%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-disabled-background-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$white</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 100%);"></span>
+<code>hsl(0, 0%, 100%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-disabled-border-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-lighter</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 86%);"></span>
+<code>hsl(0, 0%, 86%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-disabled-shadow</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        string
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>none</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-disabled-opacity</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        unitless
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>0.5</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-static-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 48%);"></span>
+<code>hsl(0, 0%, 48%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-static-background-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$white-ter</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+<code>hsl(0, 0%, 96%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+            
+            <tr>
+  <td >
+    <code style="white-space: nowrap;">$button-static-border-color</code>
+  </td>
+
+  <td>
+    <small class="tag">
+      
+        color
+      
+    </small>
+  </td>
+
+  <td>
+    
+      <code>$grey-lighter</code>
+    
+  </td>
+
+  
+    <td>
+      
+        
+          <span class="bd-color" style="background: hsl(0, 0%, 86%);"></span>
+<code>hsl(0, 0%, 86%)</code>
+
+        
+      
+    </td>
+  
+</tr>
+
+          
+        
+      </tbody>
+    </table>
+  </div>
+
+
+
+        </div>
+
+        <nav class="bd-prev-next-bis">
+          
+            <a class="bd-prev-next-bis-previous" href="http://localhost:4000/documentation/elements/box" title="Box">
+              ← Box
+            </a>
+          
+
+          
+            <a class="bd-prev-next-bis-next" href="http://localhost:4000/documentation/elements/content" title="Content">
+              Content →
+            </a>
+          
+        </nav>
+
+      </div>
+
+      <aside class="bd-side">
+        
+          <nav id="categories" class="bd-categories">
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/overview">
+          <strong>Overview</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/start">
+              Start
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/classes">
+              Classes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/modular">
+              Modularity
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/colors">
+              Colors
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/functions">
+              Functions
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/overview/mixins">
+              Mixins
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/customize">
+          <strong>Customize</strong>
+          
+            <span class="tag is-success">
+              New!
+            </span>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/concepts">
+              Concepts
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/variables">
+              Variables
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-node-sass">
+              With node-sass
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-sass-cli">
+              With Sass CLI
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/customize/with-webpack">
+              With webpack
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/modifiers">
+          <strong>Modifiers</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/syntax">
+              Syntax
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/helpers">
+              Helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/responsive-helpers">
+              Responsive helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/color-helpers">
+              Color helpers
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/modifiers/typography-helpers">
+              Typography helpers
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/columns">
+          <strong>Columns</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/basics">
+              Basics
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/sizes">
+              Sizes
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/responsiveness">
+              Responsiveness
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/nesting">
+              Nesting
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/gap">
+              Gap
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/columns/options">
+              Options
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/layout">
+          <strong>Layout</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/container">
+              Container
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/level">
+              Level
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/media-object">
+              Media Object
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/hero">
+              Hero
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/section">
+              Section
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/footer">
+              Footer
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/layout/tiles">
+              Tiles
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/form">
+          <strong>Form</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/general">
+              General
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/input">
+              Input
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/textarea">
+              Textarea
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/select">
+              Select
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/checkbox">
+              Checkbox
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/radio">
+              Radio
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/form/file">
+              File
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category is-active">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/elements">
+          <strong>Elements</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/box">
+              Box
+            </a>
+          </li>
+        
+          
+          <li class="is-current">
+            <a href="http://localhost:4000/documentation/elements/button">
+              Button
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/content">
+              Content
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/delete">
+              Delete
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/icon">
+              Icon
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/image">
+              Image
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/notification">
+              Notification
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/progress">
+              Progress bars
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/table">
+              Table
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/tag">
+              Tag
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/elements/title">
+              Title
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    
+    
+    
+
+    <div class="bd-category ">
+      <header class="bd-category-header">
+        <a class="bd-category-toggle">
+          <span class="icon">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+        <a class="bd-category-name " href="http://localhost:4000/documentation/components">
+          <strong>Components</strong>
+          
+        </a>
+      </header>
+
+      <ul class="bd-category-list">
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/breadcrumb">
+              Breadcrumb
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/card">
+              Card
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/dropdown">
+              Dropdown
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/menu">
+              Menu
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/message">
+              Message
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/modal">
+              Modal
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/navbar">
+              Navbar
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/pagination">
+              Pagination
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/panel">
+              Panel
+            </a>
+          </li>
+        
+          
+          <li >
+            <a href="http://localhost:4000/documentation/components/tabs">
+              Tabs
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</nav>
+
+
+
+          <div id="anchorsReference" class="bd-anchors-reference"></div>
+<nav id="anchors" class="bd-anchors">
+  <p class="bd-anchors-title">
+    On this page
+  </p>
+
+  <ul class="bd-anchors-list"></ul>
+</nav>
+
+        
+      </aside>
+    </div>
+  </div>
+</main>
+
+  </body>
+</html>
